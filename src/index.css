@@ -12,6 +12,12 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+
+  --toastify-toast-width: 90vh;  
+  --toastify-toast-background: #fff;
+  /* --toastify-toast-min-height: 64px;
+  --toastify-toast-max-height: 20vh; */
 }
 
 a {

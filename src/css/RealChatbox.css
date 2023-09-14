@@ -1,0 +1,93 @@
+/* Styling for the messenger chatbox component */
+/* body {
+    overflow: hidden;
+} */
+p{
+    margin:0px 0px
+}
+.messenger-chatbox {
+    width: 50vh;
+    height: 90vh;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.history-box{
+    width: 50vh;
+    height: 90vh;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    padding: 10px;
+}
+.message-container {
+    /* flex-grow: 0; */
+    height:90%;
+    display:flex;
+    flex-direction: column;
+    overflow-x: auto;
+    /* padding: 10px; */
+    /* margin-bottom: auto; */
+}
+
+.input-container {
+    display: flex;
+    padding: 10px;
+    background-color: #f9f9f9;
+    height:10%;
+}
+.remind-container {
+    align-self:flex-start;
+}
+.message {
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 70%;
+    word-wrap:break-word;
+    text-align: left;
+}
+  
+.message.user {
+    background-color: #007bff;
+    color: #fff;
+    align-self: flex-end;
+}
+  
+.message.bot {
+    background-color: #f7f5f5;
+    color: #000;
+    align-self: flex-start;
+}
+  
+  
+textarea[type='input'] {
+    flex-grow: 1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    word-wrap:break-word;
+}
+button {
+    background-color: #007bff;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+  
+.icon-container {
+    display:flex;
+    flex-direction: column;
+    align-items: self-start;
+}
+.icon {
+    width: 7vh;
+    height: 7vh;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+
+}

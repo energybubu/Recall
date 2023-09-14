@@ -1,0 +1,123 @@
+/* Styling for the messenger chatbox component */
+/* body {
+    overflow: hidden;
+} */
+p{
+    margin:0px 0px
+}
+hr{
+  border: 0;
+  clear:both;
+  display:block;
+  width: 100%;               
+  background-color:black;
+  margin:0;
+  height: 0.5px;
+}
+.messenger-chatbox {
+    width: 70vh;
+    height: 90vh;
+    border: 1px solid #ccc;
+    margin:30px;
+    display: flex;
+    flex-direction: column;
+}
+.history-box{
+    width: 50vh;
+    height: 90vh;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    padding: 10px;
+}
+.message-container {
+    /* flex-grow: 0; */
+    height:90%;
+    display:flex;
+    flex-direction: column;
+    overflow-x: auto;
+    /* padding: 20px; */
+    /* margin-bottom: auto; */
+}
+.per-message-wrapper{
+    display:flex;
+    align-items: center;
+    margin: 0px;
+}
+.per-message-wrapper.user{
+    flex-direction: row-reverse;
+}
+.per-message-wrapper.bot{
+    flex-direction: row;
+}
+.input-container {
+    display: flex;
+    /* padding: 10px; */
+    background-color: #f9f9f9;
+    height:15%;
+    align-items: center;
+}
+.remind-container {
+    display:flex;
+    flex-direction: row;
+}
+.chatbox-title{
+    display:flex;
+    height:8vh;
+    justify-content: space-between; /* Space between items, pushes one to the left and one to the right */
+    align-items: center;
+}
+.message {
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 70%;
+    word-wrap:break-word;
+    text-align: left;
+}
+  
+.message.user {
+    background-color: #007bff;
+    color: #fff;
+    align-self: flex-end;
+}
+  
+.message.bot {
+    background-color: #f7f5f5;
+    color: #000;
+    align-self: flex-start;
+}
+  
+  
+textarea[type='input'] {
+    flex-grow: 1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    word-wrap:break-word;
+}
+button {
+    background-color: #007bff;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    /* padding: 5px 10px; */
+    margin:5px;
+    cursor: pointer;
+}
+button[disabled] {
+    background-color: rgb(252, 240, 240);
+    color: white;
+    padding: 5px 10px;
+    cursor: default;
+    border: none;
+}
+.send-button {
+    background-color: #007bff;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}

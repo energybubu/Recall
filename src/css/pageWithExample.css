@@ -1,0 +1,44 @@
+#page1{
+    display: flex;
+    /* flex-direction: row; */
+    align-items: center;
+    /* Optional: You can set a fixed width and height for div C if needed */
+    width: 100%;
+    height: 100%;
+}
+.chatbox-container{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+.button-container{
+    flex: 1;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    width:50vh;
+}
+.lifelog-container{
+
+    width: 50vh;
+    height: 50vh;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+
+}
+.lifelog-title{
+    display:flex;
+    height:5vh;
+    border:1px solid #ccc;
+    justify-content: center;
+    align-items: center;
+    background: rgb(87, 210, 87);
+}
+.lifelog-content{
+    flex:1;
+    padding: 10px;
+    overflow-y: auto;
+}
