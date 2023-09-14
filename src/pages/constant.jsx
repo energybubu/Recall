@@ -1,1 +1,1 @@
-export const URL="https://recall-backend.onrender.com:5000"
+export const URL="https://recall-backend.onrender.com/"
