@@ -9,7 +9,26 @@ const Dashboard = () => <h1>About Page</h1>;
 
 function App() {
   return (
-    <PageWithExample />
+    <Router>
+      <div>
+        {/* <ul style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
+          <li>
+            <Link to="/withexample">Try using examples and historical dialogues from our dataset</Link>
+          </li>
+          <li>
+            <Link to="/withoutexample">Make you own historical dialogues and test</Link>
+          </li>
+        </ul> */}
+
+
+        {/* <hr /> */}
+
+        <Routes>
+          <Route exact path="/Recall/" element={<PageWithExample />}/>
+          {/* <Route path="/withoutexample" element={<PageWithoutExample />}/> */}
+        </Routes>
+      </div>
+    </Router>
   );
 }
 export default App
