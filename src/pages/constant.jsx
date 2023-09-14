@@ -1,1 +1,1 @@
-export const URL="http://localhost:5172"
+export const URL="https://recall-backend.onrender.com"
