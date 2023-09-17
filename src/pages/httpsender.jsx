@@ -5,14 +5,17 @@ export const fetchData = async (URL, method = 'GET', body = null) => {
         method,
         headers: {
           'Content-Type': 'application/json', // Adjust headers as needed
+          'ngrok-skip-browser-warning': '69420'
         },
         body: body ? JSON.stringify(body) : null,
+
       });
   
       if (!response.ok) {
         console.log('Network response was not ok');
       }
-      console.log(response)
+
+
       return await response.json();
     } catch (error) {
       console.log(error);

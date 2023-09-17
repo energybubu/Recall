@@ -20,7 +20,7 @@ const PageWithExample = ({storyId, setStoryId, loading, setLoading}) => {
 					</div>
           <div className='summary-lifelog-container'>
 
-            <a href="/" className='story-chooser'>Rechoose the Story</a>
+            <a href="/Recall/" className='story-chooser'>Rechoose the Story</a>
             
             <div className='summary-container'>
               <div className="lifelog-title">Story Summary</div>
