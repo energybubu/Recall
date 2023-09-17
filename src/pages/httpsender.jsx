@@ -12,7 +12,7 @@ export const fetchData = async (URL, method = 'GET', body = null) => {
       if (!response.ok) {
         console.log('Network response was not ok');
       }
-  
+      console.log(response)
       return await response.json();
     } catch (error) {
       console.log(error);
