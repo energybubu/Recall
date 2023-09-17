@@ -36,7 +36,7 @@ const LoadEx = ({messages, setMessages, newMessage, setNewMessage, example, setE
 						<button className='example-button' onClick={handleMultipleRecall}>Recall Example</button>
 						<button className='example-button' onClick={handleMultipleConf}>Conflict Example</button>
 					</>:
-					<p>backend crashed</p>
+					<></>
 				}
 			</>
     )
