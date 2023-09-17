@@ -14,12 +14,12 @@ function App() {
   const [storyId, setStoryId] = useState(3)
   const [loading, setLoading] = useState(false)
   return (
-    <Router>
+    <Router basename='/'>
       <div>
 
         {/* <hr /> */}
         <Routes>
-          <Route exact path="/" element={
+          <Route path="/" element={
             
             <div>
 

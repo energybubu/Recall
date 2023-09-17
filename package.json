@@ -2,7 +2,6 @@
   "name": "recall_system",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://energybubu.github.io/Recall/",
   "type": "module",
   "scripts": {
     "dev": "vite",
