@@ -14,7 +14,7 @@ function App() {
   const [storyId, setStoryId] = useState(3)
   const [loading, setLoading] = useState(false)
   return (
-    <Router>
+    <Router basename='/Recall'>
       <div>
 
         <Routes>
