@@ -23,7 +23,7 @@ function App() {
             <div>
 
               <div style={{display:"flex", alignItems:"center", flexDirection:"column"}}>
-                <h2>In the Chatroom, You will represent S1, and the bot will represent S2 to chat with you.<br/></h2>
+                <h2>In the Chatroom, You will represent S1, and the bot will represent S2 in your conversation.<br/></h2>
                 <h2>Choose a story to start:</h2>
               </div>
               <ul style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
