@@ -19,7 +19,7 @@ function App() {
 
         {/* <hr /> */}
         <Routes>
-          <Route path="/Recall" element={
+          <Route exact path="/Recall" element={
             
             <div>
 
