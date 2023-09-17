@@ -31,7 +31,7 @@ function App() {
                   <>
                     <Link key={index} className='story-chooser' to="/withexample" onClick={() => setStoryId(index)}>
 
-                      <img src={`${index+1}.png`} alt={id} />
+                      <img src={`./img/${index+1}.PNG`} alt={id} />
                       {id}
                       <br/>
                     </Link>
