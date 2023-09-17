@@ -31,7 +31,7 @@ function App() {
                   <>
                     <Link key={index} className='story-chooser' to="/withexample" onClick={() => setStoryId(index)}>
 
-                      <img src={`https://raw.githubusercontent.com/energybubu/Recall/main/img/${index+1}.PNG`} alt={id} />
+                      <img src={`./img/${index+1}.PNG`} alt={id} />
                       {id}
                       <br/>
                     </Link>
