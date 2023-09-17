@@ -16,3 +16,9 @@ li {
 ul{
   padding:0;
 }
+
+img{
+  height:10vh;
+  width:auto;
+  margin: 0 1vh;
+}

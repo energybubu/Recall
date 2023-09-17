@@ -9,8 +9,9 @@ import 'react-toastify/dist/ReactToastify.css';
 
 import SendIcon from '@mui/icons-material/Send';
 import { Avatar } from '@mui/material';
+import CircularProgress from '@mui/material/CircularProgress';
 
-const Chatbox = ( {messages, setMessages, newMessage, setNewMessage, example, setLifelog} ) => {
+const Chatbox = ( {messages, setMessages, newMessage, setNewMessage, example, storyId, loading, setLoading} ) => {
   const [ansFromS2, setAnsFromS2] = useState("");
   const [gptRes, setGptRes] = useState("");
   const notify = (msg) => toast(msg);
@@ -19,7 +20,9 @@ const Chatbox = ( {messages, setMessages, newMessage, setNewMessage, example, se
   const handlePostData = async (apiRoute, dataToSend) => {
     try {
       console.log(URL+apiRoute)
+      setLoading(true)
       const response = await postData(URL+apiRoute, dataToSend);
+      setLoading(false)
       return response;
     } catch (error) {
       console.error('Error:', error);
@@ -34,7 +37,7 @@ const Chatbox = ( {messages, setMessages, newMessage, setNewMessage, example, se
       resCnt+=1;
       if (gptRes[gptRes.length-1].type === "Detect Conflict"){
         notify(
-          <div style={{ display:"flex", flexDirection:"column", justifyContent:"center", alignItems:"center"}}>
+          <div className='toast-container'>
             <h2>Conflicts Found! </h2>
   
             {gptRes[gptRes.length-1].ans.ans}
@@ -44,13 +47,13 @@ const Chatbox = ( {messages, setMessages, newMessage, setNewMessage, example, se
         )
       } else if (gptRes[gptRes.length-1].type === "No Conflict"){
         notify(
-          <div style={{ display:"flex", flexDirection:"column", justifyContent:"center", alignItems:"center"}}>
-            <h2>{gptRes[gptRes.length-1].type + " Found: "} </h2>
+          <div className='toast-container'>
+            <h2>{gptRes[gptRes.length-1].type + " Found!"} </h2>
           </div>
         )
       }else {
         notify(
-          <div style={{ display:"flex", flexDirection:"column", justifyContent:"center", alignItems:"center"}}>
+          <div className='toast-container'>
             <h2>The suggested sentence</h2>
   
             {gptRes[gptRes.length-1].ans.ans}
@@ -62,31 +65,62 @@ const Chatbox = ( {messages, setMessages, newMessage, setNewMessage, example, se
     }
   }, [gptRes]);
   const handleRecall = async () => {
-    if (messages.length === 0) return;
-    const ans = await handlePostData('/api/recall', {new_dialogue: messages[messages.length-1].text});
+    console.log(messages)
+    if (messages.length === 0 || messages[messages.length-1].sender!='bot') {
+      notify(
+        <div  className='toast-container'>
+          <h2>
+            The last message needs to be sent by your friend S2.
+            <br/>
+            Please hit the 
+            <button onClick={handleRobotReply}  style={{padding:"0.3em 0.6em",background:"#00000042"}}>Get Reply</button> 
+            button first!
+            <br/>
+            Or use the 
+            <button className='example-button' onClick={() => {setMessages([{sender:"bot", text:example.recallExamples[storyId]}]);setNewMessage('');}} style={{padding:"0.3em 0.6em",background:"#00000042"}}>Example</button>
+            for Recalling.
+          </h2>
+        </div>)
+      return;
+    }
+    setLoading(true)
+    const ans = await handlePostData('/api/recall', {new_dialogue: messages});
+    setLoading(false)
     setGptRes([...gptRes, { type: "Recall", ans: ans }]);
 
   }
   const handleConf1 = async () => {
+    if (messages.length === 0 || messages[messages.length-1].sender!='user') {
+      notify(
+        <div className='toast-container'>
+          <h2>
+            Please send a message first!
+            <br/>
+            Or use the
+            <button className='example-button' onClick={() => {setMessages([{sender:"user", text:example.conflictExamples[storyId]}]);setNewMessage('');}} style={{padding:"0.3em 0.6em",background:"#00000042"}}>Example</button>
+          </h2>
+        </div>)
+      return;
+    }
     if (messages.length === 0) return;
-    const ans = await handlePostData('/api/conf1', {new_dialogue: messages[messages.length-1].text});
+    setLoading(true)
+    const ans = await handlePostData('/api/conf1', {new_dialogue: messages});
+    setLoading(false)
     console.log(ans.ans)
     if (ans.ans === "Yes"){
-      const ans2 = await handlePostData('/api/conf2', {new_dialogue: messages[messages.length-1].text});
+      setLoading(true)
+      const ans2 = await handlePostData('/api/conf2', {new_dialogue: messages});
+      setLoading(false)
       setGptRes([...gptRes, { type: "Detect Conflict", ans: ans2 }]);
     }else{
       setGptRes([...gptRes, { type: "No Conflict", ans: {ans:"There is no conflict."} }]);
     }
   }
-  // const handleConf2 = async () => {
-  //   if (messages.length === 0) return;
-  //   const ans = await handlePostData('/api/conf2', {new_dialogue: messages[messages.length-1].text});
-  //   setAnsFromS2(ans.ans)
-  //   setGptRes([...gptRes, { type: "Conf Step2", ans: ans }]);
-  // }
   const handleConf3 = async () => {
     if (messages.length === 0) return;
-    const ans = await handlePostData('/api/conf3', {new_dialogue: messages[messages.length-1].text, ans_from_S2: ansFromS2});
+    setLoading(true)
+    const ans = await handlePostData('/api/conf3', {new_dialogue: messages, ans_from_S2: ansFromS2});
+    setLoading(false)
     setGptRes([...gptRes, { type: "Conf Step3", ans: ans }]);
   }
   const handleSendMessage = async () => {
@@ -97,17 +131,23 @@ const Chatbox = ( {messages, setMessages, newMessage, setNewMessage, example, se
     setNewMessage('');
   };
   const handleRobotReply = async () => {
+    if (messages.length === 0) {
+      setMessages([{sender:"bot", text: example.recallExamples[storyId]}])
+      return;
+    }
+    setLoading(true)
     const res = await handlePostData('/api/chat', {messages: messages});
+    setLoading(false)
     setMessages(prev=>[...prev, { text: res.res, sender: 'bot' }]);
   }
   const handleClearMessage = () => {
     setMessages([]);
     setNewMessage('');
-    setLifelog(null);
   }
   return (
     <>
       <div className="messenger-chatbox">
+
 
         <div className='chatbox-title'>
           <button style={{visibility:"hidden"}}>Clear</button>  
@@ -119,6 +159,7 @@ const Chatbox = ( {messages, setMessages, newMessage, setNewMessage, example, se
           className="message-container"
           topic="ChatRoom"
           messages={messages}
+          loading={loading}
           renderMessage={(message, index) => (
             <div className={`per-message-wrapper ${message.sender}`}>
               {message.sender==='bot'? <Avatar style={{margin:"10px"}}>S2</Avatar>:<Avatar style={{margin:"10px"}}>S1</Avatar>}
@@ -130,12 +171,8 @@ const Chatbox = ( {messages, setMessages, newMessage, setNewMessage, example, se
         />
         <hr/>
         <div className="remind-container">
-          {messages.length?
-            <>
-              <button onClick={handleRecall} disabled={messages[messages.length-1].sender==='user'}>Recall</button>
-              <button onClick={handleConf1} disabled={messages[messages.length-1].sender==='bot'}>Detect Conflict</button>
-            </>
-            :<></>}
+            <button onClick={handleRecall}>Recall</button>
+            <button onClick={handleConf1}>Detect Conflict</button>
             <button onClick={handleRobotReply}  style={{marginLeft: "auto", background:"#00000042"}} >Get Reply</button>
           <ToastContainer 
 
@@ -166,32 +203,6 @@ const Chatbox = ( {messages, setMessages, newMessage, setNewMessage, example, se
         </div>
       </div>
 
-      {/* <div className="history-box">
-        <h2>Retrieved Dialogues</h2>
-        {gptRes?
-          gptRes[gptRes.length-1].ans.dias.map((obj, index) => (
-            <div key={index}>
-              <h3>{gptRes[gptRes.length-1].ans.ids[index]}</h3>
-              {obj.split("\n").map((a, i)=><p key={i}>{a}</p>)}
-              <br/>
-            </div>
-          )):
-          <></>
-        }
-      </div> */}
-      {/* <ScrollableWindow
-        className="history-box"
-        topic="Responses from GPT4"
-        messages={gptRes}
-        renderMessage={(obj, index) => 
-          <div>
-            <div key={index}>
-              <h3>{obj.type}</h3>
-              <p>{obj.ans.ans}<br/></p>
-            </div>
-          </div>
-        } 
-      /> */}
     </>
   );
 };

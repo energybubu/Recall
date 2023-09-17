@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 
-const ScrollableWindow = ({ className, topic, messages, renderMessage }) => {
+import CircularProgress from '@mui/material/CircularProgress';
+const ScrollableWindow = ({ className, topic, messages, renderMessage, loading }) => {
   const scrollableDiv = useRef(null);
 
   // Scroll to the bottom whenever messages change
@@ -16,6 +17,15 @@ const ScrollableWindow = ({ className, topic, messages, renderMessage }) => {
       ref={scrollableDiv}
     >
       {messages && messages.map((message, index) => renderMessage(message, index))}
+
+      {loading && <CircularProgress 
+                    style={{
+                      position: 'absolute',
+                      top: '45%',
+                      left: '45%',
+                      transform: 'translateX(-50%) translateY(-50%)'
+                    }}
+                    size="60px"/>}
     </div>
   );
 };
