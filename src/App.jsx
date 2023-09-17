@@ -15,9 +15,9 @@ function App() {
   const [loading, setLoading] = useState(false)
   return (
     <Router basename='/'>
-      <div>
+      Hello
+      {/* <div>
 
-        {/* <hr /> */}
         <Routes>
           <Route path="/" element={
             
@@ -49,9 +49,8 @@ function App() {
               <PageWithExample storyId={storyId} setStoryId={setStoryId} loading={loading} setLoading={setLoading}/>
             </>
           }/>
-          {/* <Route path="/withoutexample" element={<PageWithoutExample />}/> */}
         </Routes>
-      </div>
+      </div> */}
     </Router>
   );
 }
