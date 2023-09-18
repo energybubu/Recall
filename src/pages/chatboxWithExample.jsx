@@ -11,6 +11,7 @@ import SendIcon from '@mui/icons-material/Send';
 import { Avatar } from '@mui/material';
 
 
+var tmp_messages;
 const Chatbox = ( {messages, setMessages, newMessage, setNewMessage, example, storyId, loading, setLoading} ) => {
   const [ansFromS2, setAnsFromS2] = useState("");
   const [gptRes, setGptRes] = useState("");
@@ -18,7 +19,6 @@ const Chatbox = ( {messages, setMessages, newMessage, setNewMessage, example, st
   const notify = (msg) => toast(msg);
   var msgs = [];
   var resCnt = 0;
-  var tmp_messages=messages;
   const handlePostData = async (apiRoute, dataToSend) => {
     try {
       setLoading(true)
@@ -31,6 +31,7 @@ const Chatbox = ( {messages, setMessages, newMessage, setNewMessage, example, st
   };
   useEffect(() => {
     resCnt = messages.length;
+    tmp_messages=messages;
   }, []);
   useEffect(() => {
     if (gptRes && gptRes.length > resCnt){
