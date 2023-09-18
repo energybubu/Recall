@@ -9,17 +9,18 @@ import 'react-toastify/dist/ReactToastify.css';
 
 import SendIcon from '@mui/icons-material/Send';
 import { Avatar } from '@mui/material';
-import CircularProgress from '@mui/material/CircularProgress';
+
 
 const Chatbox = ( {messages, setMessages, newMessage, setNewMessage, example, storyId, loading, setLoading} ) => {
   const [ansFromS2, setAnsFromS2] = useState("");
   const [gptRes, setGptRes] = useState("");
+  const [replaceId, setReplaceId] = useState(-1);
   const notify = (msg) => toast(msg);
   var msgs = [];
   var resCnt = 0;
+  var tmp_messages=messages;
   const handlePostData = async (apiRoute, dataToSend) => {
     try {
-      console.log(URL+apiRoute)
       setLoading(true)
       const response = await postData(URL+apiRoute, dataToSend);
       setLoading(false)
@@ -32,7 +33,6 @@ const Chatbox = ( {messages, setMessages, newMessage, setNewMessage, example, st
     resCnt = messages.length;
   }, []);
   useEffect(() => {
-    console.log(gptRes)
     if (gptRes && gptRes.length > resCnt){
       resCnt+=1;
       if (gptRes[gptRes.length-1].type === "Detect Conflict"){
@@ -42,13 +42,34 @@ const Chatbox = ( {messages, setMessages, newMessage, setNewMessage, example, st
   
             {gptRes[gptRes.length-1].ans.ans}
             <br/><br/>
-            <button style={{background: "rgb(87, 210, 87)", padding: "5px", margin: "5px" }} onClick={handleConf3}>Auto Resolve Conflicts</button>
+            <button style={{background: "rgb(87, 210, 87)", padding: "5px", margin: "5px" }} onClick={()=>{setReplaceId(messages.length-1);handleConf3()}}>Auto Resolve Conflicts</button>
           </div>
         )
       } else if (gptRes[gptRes.length-1].type === "No Conflict"){
         notify(
           <div className='toast-container'>
             <h2>{gptRes[gptRes.length-1].type + " Found!"} </h2>
+          </div>
+        )
+      }else if (gptRes[gptRes.length-1].type === "Conf Step3"){
+        notify(
+          <div className='toast-container'>
+            <h2>The suggested sentence</h2>
+  
+            {gptRes[gptRes.length-1].ans.ans}
+            <br/><br/>
+            <button 
+              style={{background: "rgb(87, 210, 87)", padding: "5px", margin: "5px" }} 
+              onClick={()=>{
+                if (!tmp_messages) return;
+                if (replaceId < tmp_messages.length-1) return;
+                tmp_messages = tmp_messages.map((obj, ind)=>{
+                  if (ind!==replaceId) return obj; 
+                  else return {sender:'user', text:gptRes[gptRes.length-1].ans.ans, special:1}
+                })
+                setMessages(tmp_messages)}}>
+              Replace the sent message
+            </button>
           </div>
         )
       }else {
@@ -58,14 +79,20 @@ const Chatbox = ( {messages, setMessages, newMessage, setNewMessage, example, st
   
             {gptRes[gptRes.length-1].ans.ans}
             <br/><br/>
-            <button style={{background: "rgb(87, 210, 87)", padding: "5px", margin: "5px" }} onClick={()=>{setNewMessage(gptRes[gptRes.length-1].ans.ans)}}>Set as sending message</button>
+            <button 
+              style={{background: "rgb(87, 210, 87)", padding: "5px", margin: "5px" }} 
+              onClick={()=>{
+                tmp_messages = [...messages, {sender:'user', text:gptRes[gptRes.length-1].ans.ans, special:1}]
+                setMessages(tmp_messages)}}>
+                Send this message
+            </button>
           </div>
         )
       }
     }
   }, [gptRes]);
   const handleRecall = async () => {
-    console.log(messages)
+
     if (messages.length === 0 || messages[messages.length-1].sender!='bot') {
       notify(
         <div  className='toast-container'>
@@ -106,7 +133,6 @@ const Chatbox = ( {messages, setMessages, newMessage, setNewMessage, example, st
     setLoading(true)
     const ans = await handlePostData('/api/conf1', {new_dialogue: messages});
     setLoading(false)
-    console.log(ans.ans)
     if (ans.ans === "Yes"){
       setLoading(true)
       const ans2 = await handlePostData('/api/conf2', {new_dialogue: messages});
@@ -127,6 +153,7 @@ const Chatbox = ( {messages, setMessages, newMessage, setNewMessage, example, st
     if (newMessage.trim() === '') return;
 
     const updatedMessages = [...messages, { text: newMessage, sender: 'user' }];
+    tmp_messages = updatedMessages;
     setMessages(updatedMessages);
     setNewMessage('');
   };
@@ -138,9 +165,11 @@ const Chatbox = ( {messages, setMessages, newMessage, setNewMessage, example, st
     setLoading(true)
     const res = await handlePostData('/api/chat', {messages: messages});
     setLoading(false)
-    setMessages(prev=>[...prev, { text: res.res, sender: 'bot' }]);
+    var tmp_messages = [...messages, { text: res.res, sender: 'bot' }];
+    setMessages(tmp_messages);
   }
   const handleClearMessage = () => {
+    tmp_messages = [];
     setMessages([]);
     setNewMessage('');
   }
@@ -163,16 +192,20 @@ const Chatbox = ( {messages, setMessages, newMessage, setNewMessage, example, st
           renderMessage={(message, index) => (
             <div className={`per-message-wrapper ${message.sender}`}>
               {message.sender==='bot'? <Avatar style={{margin:"10px"}}>S2</Avatar>:<Avatar style={{margin:"10px"}}>S1</Avatar>}
-              <div key={index} className={`message ${message.sender}`}>
+              {'special' in message?
+                <div key={index} className={`message special`}>
+                  {message.text}
+                </div>
+              :<div key={index} className={`message ${message.sender}`}>
                 {message.text}
-              </div>
+              </div>}
             </div>
           )}
         />
         <hr/>
         <div className="remind-container">
-            <button onClick={handleRecall}>Recall</button>
-            <button onClick={handleConf1}>Detect Conflict</button>
+            <button style={{backgroundColor:'hsl(50, 100%, 65%)'}} onClick={handleRecall}>Recall</button>
+            <button style={{backgroundColor:'hsl(50, 100%, 65%)'}} onClick={handleConf1}>Detect Conflict</button>
             <button onClick={handleRobotReply}  style={{marginLeft: "auto", background:"#00000042"}} >Get Reply</button>
           <ToastContainer 
 
