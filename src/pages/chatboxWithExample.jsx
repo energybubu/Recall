@@ -212,7 +212,7 @@ const Chatbox = ( {messages, setMessages, newMessage, setNewMessage, example, st
 
             position="top-right"
             draggable={false}
-            closeOnClick={false}
+            closeOnClick={true}
             pauseOnFocusLoss
             autoClose={12000}
             newestOnTop={true}
