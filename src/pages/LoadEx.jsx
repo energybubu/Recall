@@ -49,7 +49,7 @@ const LoadEx = ({messages, setMessages, newMessage, setNewMessage, example, setE
 						}
 					
 					</>:
-					<></>
+					<>Loading Information ...</>
 				}
 			</>
     )
