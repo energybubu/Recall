@@ -39,12 +39,12 @@ const LoadEx = ({messages, setMessages, newMessage, setNewMessage, example, setE
 					<>
 						{whichExample==="recall"?
 							<>
-								<button className='example-button' onClick={handleMultipleRecall} style={{backgroundColor:'rgb(192, 183, 183)', border:'3px solid black'}}>Example 1</button>
-								<button className='example-button' onClick={handleMultipleConf} style={{backgroundColor:'rgb(252, 240, 240)'}}>Example 2</button>
+								<button className='example-button' onClick={handleMultipleRecall} style={{backgroundColor:'rgb(192, 183, 183)', border:'3px solid black'}}>S2(Bot) First</button>
+								<button className='example-button' onClick={handleMultipleConf} style={{backgroundColor:'rgb(252, 240, 240)'}}>S1(You) First</button>
 							</>:
 							<>
-								<button className='example-button' onClick={handleMultipleRecall} style={{backgroundColor:'rgb(252, 240, 240)'}}>Example 1</button>
-								<button className='example-button' onClick={handleMultipleConf} style={{backgroundColor:'rgb(192, 183, 183)', border:'3px solid black'}}>Example 2</button>
+								<button className='example-button' onClick={handleMultipleRecall} style={{backgroundColor:'rgb(252, 240, 240)'}}>S2(Bot) First</button>
+								<button className='example-button' onClick={handleMultipleConf} style={{backgroundColor:'rgb(192, 183, 183)', border:'3px solid black'}}>S1(You) First</button>
 							</>
 						}
 					

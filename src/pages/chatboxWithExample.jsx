@@ -77,7 +77,7 @@ const Chatbox = ( {messages, setMessages, newMessage, setNewMessage, example, st
   
             {gptRes[gptRes.length-1].ans.ans}
             <br/><br/>
-            <button style={{background: "rgb(87, 210, 87)", padding: "5px", margin: "5px" }} onClick={()=>{handleSetNewMessage(gptRes[gptRes.length-1].ans.ans, true);setNewMessageFlag(true)}}>
+            <button style={{background: "rgb(87, 210, 87)", padding: "5px", margin: "5px" }} onClick={()=>{handleSetNewMessage(gptRes[gptRes.length-1].ans.ans, true);setNewMessageFlag(true);setGptCorrected(true)}}>
               Set as sending message
             </button>
           </div>
@@ -107,8 +107,6 @@ const Chatbox = ( {messages, setMessages, newMessage, setNewMessage, example, st
     setWarningMsg('Recalling ...')
     const ans = await handlePostData('/api/recall', {new_dialogue: messages});
     setWarningMsg('')
-    setGptCorrected(true)
-    setNewMessageFlag(true)
     setGptRes([...gptRes, { type: "Recall", ans: ans }]);
 
   }

@@ -7,20 +7,15 @@ import PageWithExample from './pages/pageWithExample'
 
 import { Avatar } from '@mui/material';
 
-// import PageWithoutExample from './pages/pageWithoutExample'
-const About = () => <h1>About Page</h1>;
-const Dashboard = () => <h1>About Page</h1>;
-
 function App() {
 
   const [storyId, setStoryId] = useState(3)
   const [loading, setLoading] = useState(false)
+  const [page, setPage] = useState(0)
   return (
     <Router basename='/Recall'>
       <div>
-
-        <Routes>
-          <Route path="/" element={
+          {page==0? 
             
             <div>
 
@@ -34,7 +29,7 @@ function App() {
               <ul style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
               {['Badminton Competition', 'Studying Computer Engineering', "Playing the Guitar", 'Driving Experiences', 'Ping-Pong Competition'].map((id, index) => (
                   <>
-                    <Link key={index} className='story-chooser' to="/withexample" onClick={() => setStoryId(index)}>
+                    <Link key={index} className='story-chooser' onClick={() => {setStoryId(index);setPage(1)}}>
 
                       <img src={`https://raw.githubusercontent.com/energybubu/Recall/main/img/${index+1}.PNG`} alt={id} />
                       {id}
@@ -46,15 +41,13 @@ function App() {
               </ul>
               <div style={{height:'40vh'}}></div>
             </div>
-          }/>
-          <Route path="/withexample" element={
+          :
             <>
               <div style={{display:"flex", justifyContent:"center", alignContent:"center"}}>
               </div>
-              <PageWithExample storyId={storyId} setStoryId={setStoryId} loading={loading} setLoading={setLoading}/>
-            </>
-          }/>
-        </Routes>
+              <PageWithExample storyId={storyId} setStoryId={setStoryId} loading={loading} setLoading={setLoading} setPage={setPage}/>
+            </>}
+          
       </div>
     </Router>
   );

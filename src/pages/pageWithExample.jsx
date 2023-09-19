@@ -5,7 +5,7 @@ import DialogueHistory from './DialogueHistory'
 import LoadEx from './LoadEx'
 import '../css/pageWithExample.css'
 
-const PageWithExample = ({storyId, setStoryId, loading, setLoading}) => {
+const PageWithExample = ({storyId, setStoryId, loading, setLoading, setPage}) => {
     const [messages, setMessages] = useState([]);
     const [newMessage, setNewMessage] = useState('');
     const [example, setExample] = useState(null);
@@ -21,7 +21,7 @@ const PageWithExample = ({storyId, setStoryId, loading, setLoading}) => {
 					</div>
           <div className='summary-lifelog-container'>
 
-            <a href="/Recall/" className='story-chooser'>Rechoose the Story</a>
+            <a onClick={()=>setPage(0)} className='story-chooser'>Rechoose the Story</a>
             
             <div className='summary-container'>
               <div className="lifelog-title">Story Summary</div>
