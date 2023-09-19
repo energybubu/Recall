@@ -70,6 +70,13 @@ const Chatbox = ( {messages, setMessages, newMessage, setNewMessage, example, st
             <button style={{background: "rgb(87, 210, 87)", padding: "5px", margin: "5px" }} onClick={()=>{handleSetNewMessage(gptRes[gptRes.length-1].ans.ans, true);}}>Set as sending message</button>
           </div>
         )
+      }else if (gptRes[gptRes.length-1].ans.ans === "Nothing to Recall!"){
+        notify(
+          <div className='toast-container'>
+            <h2>{gptRes[gptRes.length-1].ans.ans}</h2>
+  
+          </div>
+        )
       }else {
         notify(
           <div className='toast-container'>
