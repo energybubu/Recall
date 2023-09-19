@@ -56,7 +56,7 @@ hr{
     display: flex;
     /* padding: 10px; */
     background-color: #f9f9f9;
-    height:15%;
+    /* height:15%; */
     align-items: center;
 }
 .remind-container {
@@ -81,19 +81,19 @@ hr{
 .message.user {
     background-color: #007bff;
     color: #fff;
-    align-self: flex-end;
+    /* align-self: flex-end; */
 }
   
 .message.bot {
     background-color: #f7f5f5;
     color: #000;
-    align-self: flex-start;
+    /* align-self: flex-start; */
 }
   
 .message.special {
-    background-color: hsl(50, 100%, 50%);
+    background-color: hsl(50, 100%, 65%);
     color: #000;
-    align-self: flex-start;
+    /* align-self: flex-start; */
 }
   
 textarea[type='input'] {

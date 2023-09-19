@@ -9,14 +9,15 @@ const PageWithExample = ({storyId, setStoryId, loading, setLoading}) => {
     const [messages, setMessages] = useState([]);
     const [newMessage, setNewMessage] = useState('');
     const [example, setExample] = useState(null);
+    const [whichExample, setWhichExample] = useState("recall")
     return (
       <>
         <div id="page1">
           <div className="button-container">
-            <LoadEx  messages={messages} setMessages={setMessages} newMessage={newMessage} setNewMessage={setNewMessage} example={example} setExample={setExample} storyId={storyId} setLoading={setLoading}/>
+            <LoadEx  messages={messages} setMessages={setMessages} newMessage={newMessage} setNewMessage={setNewMessage} example={example} setExample={setExample} storyId={storyId} setLoading={setLoading} whichExample={whichExample} setWhichExample={setWhichExample}/>
           </div>
 					<div className="chatbox-container">
-						<Chatbox  messages={messages} setMessages={setMessages} newMessage={newMessage} setNewMessage={setNewMessage} example={example} storyId={storyId} loading={loading} setLoading={setLoading}/>
+						<Chatbox  messages={messages} setMessages={setMessages} newMessage={newMessage} setNewMessage={setNewMessage} example={example} storyId={storyId} loading={loading} setLoading={setLoading} setWhichExample={setWhichExample}/>
 					</div>
           <div className='summary-lifelog-container'>
 
