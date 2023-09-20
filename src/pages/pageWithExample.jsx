@@ -5,7 +5,7 @@ import DialogueHistory from './DialogueHistory'
 import LoadEx from './LoadEx'
 import '../css/pageWithExample.css'
 
-const PageWithExample = ({storyId, setStoryId, loading, setLoading}) => {
+const PageWithExample = ({storyId, loading, setLoading}) => {
     const [messages, setMessages] = useState([]);
     const [newMessage, setNewMessage] = useState('');
     const [example, setExample] = useState(null);

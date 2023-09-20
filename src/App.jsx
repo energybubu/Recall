@@ -9,7 +9,7 @@ import { Avatar } from '@mui/material';
 
 function App() {
 
-  const [storyId, setStoryId] = useState(3)
+  // const [storyId, setStoryId] = useState(3)
   const [loading, setLoading] = useState(false)
   const Firstpage = () => (
     <div>
@@ -23,7 +23,7 @@ function App() {
       <ul style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
       {['Badminton Competition', 'Studying Computer Engineering', "Playing the Guitar", 'Driving Experiences', 'Ping-Pong Competition'].map((id, index) => (
           <>
-            <Link to="/chatroom" key={index} className='story-chooser' onClick={() => {setStoryId(index);}}>
+            <Link to={id.replace(/ /g, "")} key={index} className='story-chooser'>
 
               <img src={`https://raw.githubusercontent.com/energybubu/Recall/main/img/${index+1}.PNG`} alt={id} />
               {id}
@@ -36,12 +36,12 @@ function App() {
       <div style={{height:'40vh'}}></div>
     </div>
   )
-  const Chatroompage = ()=>(
+  const Chatroompage = ({storyId})=>(
 
     <>
       <div style={{display:"flex", justifyContent:"center", alignContent:"center"}}>
       </div>
-      <PageWithExample storyId={storyId} setStoryId={setStoryId} loading={loading} setLoading={setLoading}/>
+      <PageWithExample storyId={storyId} loading={loading} setLoading={setLoading}/>
     </>
   )
 
@@ -54,7 +54,11 @@ function App() {
       </div> */}
       <Routes>
         <Route path='/' element={<Firstpage/> }/>
-        <Route path='/chatroom' element={<Chatroompage/> }/>
+        {
+          ['BadmintonCompetition', 'StudyingComputerEngineering', "PlayingtheGuitar", 'DrivingExperiences', 'Ping-PongCompetition'].map((id, index)=>(
+            <Route path={id} element={<Chatroompage storyId={index}/> }/>
+          ))
+        }
         <Route path="/*" element={<Navigate to="/" />}/>
       </Routes>
 
@@ -62,3 +66,4 @@ function App() {
   );
 }
 export default App
+
