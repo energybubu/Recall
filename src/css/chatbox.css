@@ -126,6 +126,7 @@ button[disabled] {
     border-radius: 5px;
     padding: 5px 10px;
     cursor: pointer;
+
 }
 .toast-container {
     display: flex;
