@@ -47,7 +47,7 @@ function App() {
 
   return (
 
-    <Router basename='/'>
+    <Router>
       {/* <div>
         <Link to="/">Caption</Link>
         <Link to="/chatroom">Dense Caption</Link>
