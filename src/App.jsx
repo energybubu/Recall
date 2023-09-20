@@ -55,11 +55,10 @@ function App() {
       <Routes>
         <Route path='/' element={<Firstpage/> }/>
         {
-          ['BadmintonCompetition', 'StudyingComputerEngineering', "PlayingtheGuitar", 'DrivingExperiences', 'Ping-PongCompetition'].map((id, index)=>(
-            <Route path={id} element={<Chatroompage storyId={index}/> }/>
+          ['Badminton Competition', 'Studying Computer Engineering', "Playing the Guitar", 'Driving Experiences', 'Ping-Pong Competition'].map((id, index)=>(
+            <Route path={id.replace(/ /g, "")} element={<Chatroompage storyId={index}/> }/>
           ))
         }
-        <Route path="/*" element={<Navigate to="/" />}/>
       </Routes>
 
     </Router>
