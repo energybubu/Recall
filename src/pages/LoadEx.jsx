@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { fetchData } from './httpsender';
 import { URL } from './constant.jsx'
 import '../css/LoadEx.css'
-const LoadEx = ({messages, setMessages, newMessage, setNewMessage, example, setExample, lifelog, setLifelog, storyId, setLoading, whichExample, setWhichExample}) => {
+import Chatbox from './chatboxWithExample'
+const LoadEx = ({messages, setMessages, newMessage, setNewMessage, example, setExample, lifelog, setLifelog, storyId, whichExample, setWhichExample, setForceSend, setNewMessageFlag, warningMsg, setWarningMsg}) => {
 
     useEffect(() => {
 			const fetchDataFromAPI = async () => {
@@ -16,21 +17,26 @@ const LoadEx = ({messages, setMessages, newMessage, setNewMessage, example, setE
 					console.error('Error:', error);
 				}
 			};
-			setLoading(true)
+			setWarningMsg('Loading backend resources ...')	
 			fetchDataFromAPI();
-			setLoading(false)
+			setWarningMsg('')
     }, []);
 		
 		const handleMultipleRecall = () => {
+			if (warningMsg) return;
 			setMessages([{sender:"bot", text:example.recallExamples[storyId]}]);
 
 			setNewMessage('');
 			setWhichExample("recall")
+			setForceSend(false)
 		}
 		const handleMultipleConf = () => {
+			if (warningMsg) return;
 			setMessages([]);
 			setNewMessage(example.conflictExamples[storyId]);
 			setWhichExample("conflict")
+			setForceSend(true)
+			setNewMessageFlag(false)
 		}
 
     return (
@@ -39,12 +45,22 @@ const LoadEx = ({messages, setMessages, newMessage, setNewMessage, example, setE
 					<>
 						{whichExample==="recall"?
 							<>
-								<button className='example-button' onClick={handleMultipleRecall} style={{backgroundColor:'rgb(192, 183, 183)', border:'3px solid black'}}>S2(Bot) First</button>
-								<button className='example-button' onClick={handleMultipleConf} style={{backgroundColor:'rgb(252, 240, 240)'}}>S1(You) First</button>
-							</>:
+								<button className='example-button' onClick={handleMultipleRecall} style={{backgroundColor:'rgb(192, 183, 183)', border:'3px solid black'}}>Get sample questions and click
+									<div className='fake-button' style={{backgroundColor:'hsl(50, 100%, 65%)', color:'black'}} >Recall</div>
+								</button>
+								<button className='example-button' onClick={handleMultipleConf} style={{backgroundColor:'rgb(252, 240, 240)'}}>Send sample messages to try Detect Conflict</button>
+							</>:whichExample==="conflict"?
 							<>
-								<button className='example-button' onClick={handleMultipleRecall} style={{backgroundColor:'rgb(252, 240, 240)'}}>S2(Bot) First</button>
-								<button className='example-button' onClick={handleMultipleConf} style={{backgroundColor:'rgb(192, 183, 183)', border:'3px solid black'}}>S1(You) First</button>
+								<button className='example-button' onClick={handleMultipleRecall} style={{backgroundColor:'rgb(252, 240, 240)'}}>Get sample questions and click
+								<div className='fake-button' style={{backgroundColor:'hsl(50, 100%, 65%)', color:'black'}} >Recall</div>
+								</button>
+								<button className='example-button' onClick={handleMultipleConf} style={{backgroundColor:'rgb(192, 183, 183)', border:'3px solid black'}}>Send sample messages to try Detect Conflict</button>
+							</>:<>
+							
+								<button className='example-button' onClick={handleMultipleRecall} style={{backgroundColor:'rgb(252, 240, 240)'}}>Get sample questions and click
+									<div className='fake-button' style={{backgroundColor:'hsl(50, 100%, 65%)', color:'black'}} >Recall</div>
+								</button>
+								<button className='example-button' onClick={handleMultipleConf} style={{backgroundColor:'rgb(252, 240, 240)'}}>Send sample messages to try Detect Conflict</button>
 							</>
 						}
 					

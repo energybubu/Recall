@@ -12,12 +12,10 @@ import SendIcon from '@mui/icons-material/Send';
 import { Avatar } from '@mui/material';
 
 
-const Chatbox = ( {messages, setMessages, newMessage, setNewMessage, example, storyId, loading, setLoading, setWhichExample} ) => {
+const Chatbox = ( {messages, setMessages, newMessage, setNewMessage, example, storyId, warningMsg, setWarningMsg, whichExample, setWhichExample, forceSend, setForceSend, newMessageFlag, setNewMessageFlag} ) => {
   const [ansFromS2, setAnsFromS2] = useState("");
   const [gptRes, setGptRes] = useState("");
-  const [newMessageFlag, setNewMessageFlag] = useState(false);
   const [gptCorrected, setGptCorrected] = useState(false);
-  const [warningMsg, setWarningMsg] = useState('');
   const notify = (msg) => toast(msg);
   var conflictFound = false;
   var msgs = [];
@@ -39,8 +37,12 @@ const Chatbox = ( {messages, setMessages, newMessage, setNewMessage, example, st
   }, []);
   useEffect(()=>{
 
-    console.log("newMessageFlag", newMessageFlag, "gptCorrected:", gptCorrected)
   }, [newMessageFlag, gptCorrected])
+  useEffect(() => {
+
+    if (newMessageFlag || !forceSend) return;
+    handleSendMessage();
+  }, [forceSend]);
   useEffect(() => {
     if (gptRes && gptRes.length > resCnt){
       resCnt+=1;
@@ -58,7 +60,7 @@ const Chatbox = ( {messages, setMessages, newMessage, setNewMessage, example, st
       } else if (gptRes[gptRes.length-1].type === "No Conflict"){
         notify(
           <div className='toast-container'>
-            <h2>{gptRes[gptRes.length-1].type + " Found!"} </h2>
+            <h2>{gptRes[gptRes.length-1].type + " Found! Message Sent!"} </h2>
           </div>
         )
       }else if (gptRes[gptRes.length-1].type === "Conf Step3"){
@@ -96,6 +98,7 @@ const Chatbox = ( {messages, setMessages, newMessage, setNewMessage, example, st
     }
   }, [gptRes]);
   const handleRecall = async () => {
+    if (warningMsg) return;
 
     if (messages.length === 0 || messages[messages.length-1].sender!='bot') {
       notify(
@@ -121,13 +124,13 @@ const Chatbox = ( {messages, setMessages, newMessage, setNewMessage, example, st
 
   }
   const handleConf1 = async () => {
-    setWarningMsg('Detecting Conflicts ...')
+    if (warningMsg) return;
+    setWarningMsg('Send and Detecting Conflicts ...')
     const ans = await handlePostData('/api/conf1', {new_dialogue: [...messages, {sender:"user", text: newMessage}]});
     if (ans.ans === "Yes"){
       conflictFound = true;
       const ans2 = await handlePostData('/api/conf2', {new_dialogue: [...messages, {sender:"user", text: newMessage}]});
       setAnsFromS2(ans2.ans);
-      console.log("ans2", ans2.ans)
       setGptRes([...gptRes, { type: "Detect Conflict", ans: ans2 }]);
     }else{
       setGptRes([...gptRes, { type: "No Conflict", ans: {ans:"There is no conflict."} }]);
@@ -135,12 +138,15 @@ const Chatbox = ( {messages, setMessages, newMessage, setNewMessage, example, st
     setWarningMsg('')
   }
   const handleConf3 = async () => {
-    setWarningMsg('Auto Resolvings Conflicts ...')
+    if (warningMsg) return;
+    setWarningMsg('Auto Resolve Conflicts ...')
     const ans = await handlePostData('/api/conf3', {new_dialogue: [...messages, {sender:"user", text: newMessage}], ans_from_S2: ansFromS2});
     setWarningMsg('')
     setGptRes([...gptRes, { type: "Conf Step3", ans: ans }]);
   }
   const handleSendMessage = async () => {
+    if (warningMsg) return;
+    setForceSend(false);
     if (newMessage.trim() === '') return;
 
     if (newMessageFlag==false){
@@ -159,10 +165,11 @@ const Chatbox = ( {messages, setMessages, newMessage, setNewMessage, example, st
     setMessages(updatedMessages);
     handleSetNewMessage('', false);
     setNewMessageFlag(false);
-    console.log(updatedMessages)
+
     await handleRobotReply(updatedMessages);
   };
   const handleRobotReply = async (updatedMessages) => {
+    if (warningMsg) return;
     if (updatedMessages.length === 0) {
       setMessages([{sender:"bot", text: example.recallExamples[storyId]}])
       return;
@@ -174,9 +181,11 @@ const Chatbox = ( {messages, setMessages, newMessage, setNewMessage, example, st
     setMessages(updatedMessages);
   }
   const handleClearMessage = () => {
+    if (warningMsg) return;
     setMessages([]);
     handleSetNewMessage('', false);
     setNewMessageFlag(false);
+    setWhichExample("")
   }
   return (
     <>
@@ -193,7 +202,6 @@ const Chatbox = ( {messages, setMessages, newMessage, setNewMessage, example, st
           className="message-container"
           topic="ChatRoom"
           messages={messages}
-          loading={loading}
           renderMessage={(message, index) => (
             <div className={`per-message-wrapper ${message.sender}`}>
               {message.sender==='bot'? <Avatar style={{margin:"10px"}}>S2</Avatar>:<Avatar style={{margin:"10px"}}>S1</Avatar>}
@@ -272,7 +280,7 @@ const Chatbox = ( {messages, setMessages, newMessage, setNewMessage, example, st
               }
             }}
           />
-          <SendIcon className="send-button" onClick={handleSendMessage}>Send</SendIcon>
+          <SendIcon sx={{ fontSize: 40 }} className="send-button" onClick={handleSendMessage}>Send</SendIcon>
         </div>
       </div>
 

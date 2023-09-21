@@ -74,7 +74,7 @@ hr{
     margin: 5px;
     padding: 10px;
     border-radius: 10px;
-    max-width: 70%;
+    max-width: 50%;
     word-wrap:break-word;
     text-align: left;
 }
@@ -104,6 +104,15 @@ textarea[type='input'] {
     padding: 10px;
     word-wrap:break-word;
 }
+.fake-button{
+    border: none;
+    border-radius: 5px;
+    padding: 7px 3px;
+    margin:10px;
+    cursor: pointer;
+    width: 60px
+
+}
 button {
     background-color: #007bff;
     color: black;
@@ -121,12 +130,13 @@ button[disabled] {
     border: none;
 }
 .send-button {
-    background-color: #007bff;
-    color: black;
+    background-color: #00000042;
+    /* color: black; */
     border: none;
     border-radius: 5px;
     padding: 5px 10px;
     cursor: pointer;
+    height:100%;
 
 }
 .toast-container {

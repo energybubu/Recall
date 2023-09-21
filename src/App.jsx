@@ -8,7 +8,6 @@ import Firstpage from './pages/firstPage'
 
 function App() {
 
-  const [loading, setLoading] = useState(false)
   const topics = ['Badminton Competition', 'Studying Computer Engineering', "Playing the Guitar", 'Driving Experiences', 'Ping-Pong Competition']
 
   return (
@@ -18,7 +17,7 @@ function App() {
         <Route path='/' element={<Firstpage/> }/>
         {
           topics.map((id, index)=>(
-            <Route path={id.replace(/ /g, "")} element={<PageWithExample storyId={index} loading={loading} setLoading={setLoading}/>}/>
+            <Route path={id.replace(/ /g, "")} element={<PageWithExample storyId={index} />}/>
           ))
         }
       </Routes>
