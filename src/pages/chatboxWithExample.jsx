@@ -52,6 +52,7 @@ const Chatbox = ( {messages, setMessages, newMessage, setNewMessage, example, st
             {gptRes[gptRes.length-1].ans.ans}
             <br/><br/>
             <button style={{background: "rgb(87, 210, 87)", padding: "5px", margin: "5px" }} onClick={()=>{handleConf3();}}>Auto Resolve Conflicts</button>
+            or click anywhere to close
           </div>
         )
       } else if (gptRes[gptRes.length-1].type === "No Conflict"){
@@ -68,6 +69,7 @@ const Chatbox = ( {messages, setMessages, newMessage, setNewMessage, example, st
             {gptRes[gptRes.length-1].ans.ans}
             <br/><br/>
             <button style={{background: "rgb(87, 210, 87)", padding: "5px", margin: "5px" }} onClick={()=>{handleSetNewMessage(gptRes[gptRes.length-1].ans.ans, true);}}>Set as sending message</button>
+            or click anywhere to close
           </div>
         )
       }else if (gptRes[gptRes.length-1].ans.ans === "Nothing to Recall!"){
@@ -87,6 +89,7 @@ const Chatbox = ( {messages, setMessages, newMessage, setNewMessage, example, st
             <button style={{background: "rgb(87, 210, 87)", padding: "5px", margin: "5px" }} onClick={()=>{handleSetNewMessage(gptRes[gptRes.length-1].ans.ans, true);setNewMessageFlag(true);setGptCorrected(true)}}>
               Set as sending message
             </button>
+            or click anywhere to close
           </div>
         )
       }
@@ -101,11 +104,11 @@ const Chatbox = ( {messages, setMessages, newMessage, setNewMessage, example, st
             The last message needs to be sent by your friend S2.
             <br/>
             Please hit the 
-            <button onClick={handleRobotReply}  style={{padding:"0.3em 0.6em",background:"#00000042"}}>Get Reply</button> 
+            <button onClick={()=>handleRobotReply([])}  style={{padding:"0.3em 0.6em",background:"#00000042"}}>Get Reply</button> 
             button first!
             <br/>
             Or use the 
-            <button className='example-button' onClick={() => {setMessages([{sender:"user", text:example.conflictExamples[storyId]}]);setNewMessage('');setWhichExample('recall')}} style={{padding:"0.3em 0.6em",background:"#00000042"}}>Example</button>
+            <button className='example-button' onClick={() => {setMessages([{sender:"bot", text:example.recallExamples[storyId]}]);setNewMessage('');setWhichExample('recall')}} style={{padding:"0.3em 0.6em",background:"#00000042"}}>Example</button>
             for Recalling.
           </h2>
         </div>)
@@ -156,16 +159,18 @@ const Chatbox = ( {messages, setMessages, newMessage, setNewMessage, example, st
     setMessages(updatedMessages);
     handleSetNewMessage('', false);
     setNewMessageFlag(false);
+    console.log(updatedMessages)
+    await handleRobotReply(updatedMessages);
   };
-  const handleRobotReply = async () => {
-    if (messages.length === 0) {
+  const handleRobotReply = async (updatedMessages) => {
+    if (updatedMessages.length === 0) {
       setMessages([{sender:"bot", text: example.recallExamples[storyId]}])
       return;
     }
     setWarningMsg('S2 is typing ...')
-    const res = await handlePostData('/api/chat', {messages: messages});
+    const res = await handlePostData('/api/chat', {messages: updatedMessages});
     setWarningMsg('')
-    var updatedMessages = [...messages, { text: res.res, sender: 'bot' }];
+    var updatedMessages = [...updatedMessages, { text: res.res, sender: 'bot' }];
     setMessages(updatedMessages);
   }
   const handleClearMessage = () => {
@@ -233,9 +238,9 @@ const Chatbox = ( {messages, setMessages, newMessage, setNewMessage, example, st
         <div className="remind-container">
             <button style={{backgroundColor:'hsl(50, 100%, 65%)'}} onClick={handleRecall}>Recall</button>
             {/* <button style={{backgroundColor:'hsl(50, 100%, 65%)'}} onClick={handleConf1}>Detect Conflict</button> */}
-            <button onClick={handleRobotReply}  style={{display:"flex", flexDirection:"row", alignItems:'center', marginLeft: "auto", padding:"0.2em 0.6em"}} >
+            {/* <button onClick={handleRobotReply}  style={{display:"flex", flexDirection:"row", alignItems:'center', marginLeft: "auto", padding:"0.2em 0.6em"}} >
               <Avatar style={{margin:'0 10px'}}>S2</Avatar> Reply
-            </button>
+            </button> */}
           <ToastContainer 
 
             position="top-right"

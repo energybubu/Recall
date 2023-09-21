@@ -6,6 +6,7 @@ export default defineConfig({
   plugins: [react()],
   base: '/Recall/',
   server:{
-    open:true
+    open:true,
+    port:3000
   }
 })

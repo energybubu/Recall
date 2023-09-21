@@ -61,7 +61,8 @@ hr{
 }
 .remind-container {
     display:flex;
-    flex-direction: row;
+    justify-content: flex-end;
+
 }
 .chatbox-title{
     display:flex;
