@@ -1,0 +1,452 @@
+[
+    {
+        "dialogue_ids":[215,216,239,243,244,249,270,272,278,312],
+        "dialogues_with_clue": [215],
+        "new_dialogue":"S3: Have you heard of the movie 'click' before?\nS1:",
+        "replier":"S1",
+        "profession":"student",
+        "reply":"Yes, my friend told me it was a touching movie.",
+        "crucial_reply": "Yes my friend touching movie" 
+    },
+    {
+        "dialogue_ids":[215,216,239,243,244,249,270,272,278,312],
+        "dialogues_with_clue": [215],
+        "new_dialogue":"S3: Do you know who is in the movie 'Click'?\nS1:",
+        "replier":"S1",
+        "profession":"student",
+        "reply":"No, I don't know",
+        "crucial_reply": "No" 
+    },
+    {
+        "dialogue_ids":[215,216,239,243,244,249,270,272,278,312],
+        "dialogues_with_clue": [216],
+        "new_dialogue":"S3: Do you know Bill's English exam score?\nS1:",
+        "replier":"S1",
+        "profession":"student",
+        "reply":"Yes, he got high marks in the exam.",
+        "crucial_reply": "got high marks" 
+    },
+    {
+        "dialogue_ids":[215,216,239,243,244,249,270,272,278,312],
+        "dialogues_with_clue": [216],
+        "new_dialogue":"S3: Did you make fun of anyone this April Fool's day?\nS1:",
+        "replier":"S1",
+        "profession":"student",
+        "reply":"Yes, I told Bill that he screwed up his English exam.",
+        "crucial_reply": "Yes Bill English exam" 
+    },
+    {
+        "dialogue_ids":[215,216,239,243,244,249,270,272,278,312],
+        "dialogues_with_clue": [239],
+        "new_dialogue":"S3: Are you interested in going abroad?\nS1:",
+        "replier":"S1",
+        "profession":"student",
+        "reply":"Yes, that's my dream.",
+        "crucial_reply": "Yes my dream Italy"
+    },
+    {
+        "dialogue_ids":[215,216,239,243,244,249,270,272,278,312],
+        "dialogues_with_clue": [239],
+        "new_dialogue":"S3: Do you have any plan during next summer vacation?\nS1:",
+        "replier":"S1",
+        "profession":"student",
+        "reply":"Yes, I'm planning to go to Italy.",
+        "crucial_reply": "Yes Italy"
+    },
+    {
+        "dialogue_ids":[215,216,239,243,244,249,270,272,278,312],
+        "dialogues_with_clue": [244],
+        "new_dialogue":"S3: Do you know about Becky?\nS1:",
+        "replier":"S1",
+        "profession":"student",
+        "reply":"Yes, she's a real bitch.",
+        "crucial_reply": "Yes real bitch"
+    },
+    {
+        "dialogue_ids":[215,216,239,243,244,249,270,272,278,312],
+        "dialogues_with_clue": [244],
+        "new_dialogue":"S3: Do you know anyone who has a crush on you?\nS1:",
+        "replier":"S1",
+        "profession":"student",
+        "reply":"Yes, Becky",
+        "crucial_reply": "Yes Becky"
+    },
+    {
+        "dialogue_ids":[215,216,239,243,244,249,270,272,278,312],
+        "dialogues_with_clue": [249],
+        "new_dialogue":"S3: Have you been to any national park before?\nS1:",
+        "replier":"",
+        "profession":"student",
+        "reply":"Yes, I've been to the Yellow Rock Nationl Park with my friend, before.",
+        "crucial_reply": "Yes Yellow Rock Nationl Park"
+    },
+    {
+        "dialogue_ids":[215,216,239,243,244,249,270,272,278,312],
+        "dialogues_with_clue": [249],
+        "new_dialogue":"S3: Do you know which country Yellow Rock National Park is located in?\nS1:",
+        "replier":"",
+        "profession":"student",
+        "reply":"It's located in the US",
+        "crucial_reply": "US"
+    },
+    {
+        "dialogue_ids":[215,216,239,243,244,249,270,272,278,312],
+        "dialogues_with_clue": [270],
+        "new_dialogue":"S3: Have you played poker before?\nS1:",
+        "replier":"S1",
+        "profession":"student",
+        "reply":"Yes, I know how to play it. I can teach you.",
+        "crucial_reply":"Yes teach"
+    },
+    {
+        "dialogue_ids":[215,216,239,243,244,249,270,272,278,312],
+        "dialogues_with_clue": [272],
+        "new_dialogue":"S3: Do you know where I can find old music boxes?\nS1:",
+        "replier":"S1",
+        "profession":"student",
+        "reply":"You could try shopping at a flea market.",
+        "crucial_reply":"flea market"
+    },
+    {
+        "dialogue_ids":[215,216,239,243,244,249,270,272,278,312],
+        "dialogues_with_clue": [272],
+        "new_dialogue":"S3: Do you know where I can find a flea market?\nS1:",
+        "replier":"S1",
+        "profession":"student",
+        "reply":"You can check the local paper or search it online.",
+        "crucial_reply":"local paper online"
+    },
+    {
+        "dialogue_ids":[215,216,239,243,244,249,270,272,278,312],
+        "dialogues_with_clue": [312],
+        "new_dialogue":"S3: Did you buy any gift for your father this Father's Day?\nS1:",
+        "replier":"S1",
+        "profession":"student",
+        "reply":"Yes, I picked the gift with my friends.",
+        "crucial_reply":"Yes with friends"
+    },
+    {
+        "dialogue_ids":[3,4,7,9,11,13,14,15,17,20],
+        "dialogues_with_clue": [3],
+        "new_dialogue":"S3: Do you know Mary?\nS1:",
+        "replier":"S1",
+        "profession":"student",
+        "reply":"Yes, Mary is a diligent girl. She learns to speak Latin by osmosis within three months",
+        "crucial_reply":"diligent girl learn Latin osmosis three months"
+    },
+    {
+        "dialogue_ids":[3,4,7,9,11,13,14,15,17,20],
+        "dialogues_with_clue": [7],
+        "new_dialogue":"S3: Have you hired a car before?\nS1:",
+        "replier":"S1",
+        "profession":"student",
+        "reply":"No, I haven't",
+        "crucial_reply":"No"
+    },
+    {
+        "dialogue_ids":[3,4,7,9,11,13,14,15,17,20],
+        "dialogues_with_clue": [7],
+        "new_dialogue":"S3: Which types of vehicles are you able to operate?\nS1:",
+        "replier":"S1",
+        "profession":"student",
+        "reply":"motorbike",
+        "crucial_reply":"motorbike"
+    },
+    {
+        "dialogue_ids":[3,4,7,9,11,13,14,15,17,20],
+        "dialogues_with_clue": [7],
+        "new_dialogue":"S3: Do you know how much does it typically cost to hire a motorbike?\nS1:",
+        "replier":"S1",
+        "profession":"student",
+        "reply":"For 3 days $ 300 , for 7 days $ 600 .",
+        "crucial_reply":"3 days $300 7 days $600"
+    },
+    {
+        "dialogue_ids":[3,4,7,9,11,13,14,15,17,20],
+        "dialogues_with_clue": [7],
+        "new_dialogue":"Have you hired a motorbike before?\nS1:",
+        "replier":"S1",
+        "profession":"student",
+        "reply":"Yes, I've hired a motorbike for 7 days.",
+        "crucial_reply":"Yes motorbike 7 days"
+    },
+    {
+        "dialogue_ids":[3,4,7,9,11,13,14,15,17,20],
+        "dialogues_with_clue": [15],
+        "new_dialogue":"S3: What kind of animal have you killed?\nS2:",
+        "replier":"S2",
+        "profession":"student",
+        "reply":"I've killed a pigeon because it spoiled my painting",
+        "crucial_reply":"pigeon spoiled painting"
+    },
+    {
+        "dialogue_ids":[36,37,38,39,45,48,53,54,55],
+        "dialogues_with_clue": [36],
+        "new_dialogue":"S3: What kind of films do you like best?\nS1:",
+        "replier":"S1",
+        "profession":"student",
+        "reply":"I like to see some documentary films.",
+        "crucial_reply":"documentary films"
+    },
+    {
+        "dialogue_ids":[36,37,38,39,45,48,53,54,55],
+        "dialogues_with_clue": [36],
+        "new_dialogue":"S3: Why don't you like the feature films?\nS1:",
+        "replier":"S1",
+        "profession":"student",
+        "reply":"I think sometimes it loses contact with reality",
+        "crucial_reply":"lose reality"
+    },
+    {
+        "dialogue_ids":[36,37,38,39,45,48,53,54,55],
+        "dialogues_with_clue": [48],
+        "new_dialogue":"S3: What stamp do you like the most\nS2:",
+        "replier":"S2",
+        "profession":"student",
+        "reply":"The 1879 Large Dragon",
+        "crucial_reply":"1879 Large Dragon"
+    },
+    {
+        "dialogue_ids":[36,37,38,39,45,48,53,54,55],
+        "dialogues_with_clue": [54],
+        "new_dialogue":"S3: Have you seen William's grandmother recently?\nS1:",
+        "replier":"S1",
+        "profession":"student",
+        "reply":"Both of William 's grandmothers passed away more than five years ago.",
+        "crucial_reply":"passed away five years ago"
+    },
+    {
+        "dialogue_ids":[36,37,38,39,45,48,53,54,55],
+        "dialogues_with_clue": [54],
+        "new_dialogue":"S3: Do you know for how long William's grandmother has passed away?\nS1:",
+        "replier":"S1",
+        "profession":"student",
+        "reply":"More than five years",
+        "crucial_reply":"five years"
+    },
+    {
+        "dialogue_ids":[36,37,38,39,45,48,53,54,55],
+        "dialogues_with_clue": [55],
+        "new_dialogue":"S3: How long does it take you to walk to the Thai restaurant?\nS1",
+        "replier":"S1",
+        "profession":"student",
+        "reply":"It takes me about 20 minutes",
+        "crucial_reply":"20 minutes"
+    },
+    {
+        "dialogue_ids":[36,37,38,39,45,48,53,54,55],
+        "dialogues_with_clue": [55],
+        "new_dialogue":"S3: What kind of transportation would you choose to go to the Thai restaurant?\nS1",
+        "replier":"S1",
+        "profession":"student",
+        "reply":"I would walk there",
+        "crucial_reply":"walk on foot"
+    },
+    {
+        "dialogue_ids":[58, 59, 60, 87, 89, 97, 98, 99, 100],
+        "dialogues_with_clue": [58],
+        "new_dialogue":"S3: Have you been to Beijing before?\nS1:",
+        "replier":"S1",
+        "profession":"student",
+        "reply":"Yes, I've gone sightseeing there. We saw the Great Wall, the Summer Palace, the Forbidden City, and the Temple of Heaven.",
+        "crucial_reply":"Yes sightseeing Great Wall summer palace forbidden city temple heaven"
+    },
+    {
+        "dialogue_ids":[58, 59, 60, 87, 89, 97, 98, 99, 100],
+        "dialogues_with_clue": [58],
+        "new_dialogue":"S3: How many tourist spots do you know in Beijing?\nS1:",
+        "replier":"S1",
+        "profession":"student",
+        "reply":"The Great Wall, the Summer Palace, the Forbidden City, and the Temple of Heaven.",
+        "crucial_reply":"Great Wall summer palace forbidden city temple heaven"
+    },
+    {
+        "dialogue_ids":[58, 59, 60, 87, 89, 97, 98, 99, 100],
+        "dialogues_with_clue": [59],
+        "new_dialogue":"S3: Do you know anything about the Mid-autumn Festival?\nS2:",
+        "replier":"S2",
+        "profession":"student",
+        "reply":"Yes, It falls on the 15th day of the eighth lunar month . It is said that there is a beautiful goddess Chang ' E on the moon who had eaten some sort of elixir and had to depart her husband . She is always expecting to see her husband again . So , later we have the traditional idea that when there is the full moon , it is time for the family members to come together .",
+        "crucial_reply":"15th eighth lunar month goddess chang ' E moon eaten elixir full moon together"
+    },
+    {
+        "dialogue_ids":[58, 59, 60, 87, 89, 97, 98, 99, 100],
+        "dialogues_with_clue": [59],
+        "new_dialogue":"S3: Is Mid-Autumn Festival an official holiday in your country?\nS2:",
+        "replier":"S2",
+        "profession":"student",
+        "reply":"Yes, we can enjoy a three - day holiday for this festival",
+        "crucial_reply":"three day holiday"
+    },
+    {
+        "dialogue_ids":[58, 59, 60, 87, 89, 97, 98, 99, 100],
+        "dialogues_with_clue": [59],
+        "new_dialogue":"S3: Why do people eat moon cakes on Mid-autumn Festival?\nS1:",
+        "replier":"S1",
+        "profession":"student",
+        "reply":"Because it is said that there is a beautiful goddess Chang ' E on the moon who had eaten some sort of elixir and had to depart her husband .",
+        "crucial_reply":"goddess Chang E full moon"
+    },
+    {
+        "dialogue_ids":[58, 59, 60, 87, 89, 97, 98, 99, 100],
+        "dialogues_with_clue": [59],
+        "new_dialogue":"S3: From what time in your country have a three-day holiday on the Mid-Autumn Festival?\nS1:",
+        "replier":"S2",
+        "profession":"student",
+        "reply":"From 2008",
+        "crucial_reply":"2008"
+    },
+    {
+        "dialogue_ids":[58, 59, 60, 87, 89, 97, 98, 99, 100],
+        "dialogues_with_clue": [60],
+        "new_dialogue":"S3: Did Jessie hold a birthday party this year?\nS1:",
+        "replier":"S1",
+        "profession":"student",
+        "reply":"Yes",
+        "crucial_reply":"Yes"
+    },
+    {
+        "dialogue_ids":[58, 59, 60, 87, 89, 97, 98, 99, 100],
+        "dialogues_with_clue": [60],
+        "new_dialogue":"S3: Did you go to Jessie's birthday this year?\nS1:",
+        "replier":"S1",
+        "profession":"student",
+        "reply":"Yes",
+        "crucial_reply":"Yes"
+    },
+    {
+        "dialogue_ids":[58, 59, 60, 87, 89, 97, 98, 99, 100],
+        "dialogues_with_clue": [60],
+        "new_dialogue":"S3: What did you do in Jessie's birthday?\nS1:",
+        "replier":"S1",
+        "profession":"student",
+        "reply":"Great! We ate a lot of things. We played games and gave gifts to Jessie. We had a lot of fun.",
+        "crucial_reply":"ate played games gave gifts"
+    },
+    {
+        "dialogue_ids":[58, 59, 60, 87, 89, 97, 98, 99, 100],
+        "dialogues_with_clue": [60],
+        "new_dialogue":"S3: Do you want to hold a birthday party this year?\nS1:",
+        "replier":"S1",
+        "profession":"student",
+        "reply":"Yes",
+        "crucial_reply":"Yes"
+    },
+    {
+        "dialogue_ids":[58, 59, 60, 87, 89, 97, 98, 99, 100],
+        "dialogues_with_clue": [87],
+        "new_dialogue":"S3: Who is your first lover?\nS1:",
+        "replier":"S1",
+        "profession":"student",
+        "reply":"Linda",
+        "crucial_reply":"Linda"
+    },
+    {
+        "dialogue_ids":[58, 59, 60, 87, 89, 97, 98, 99, 100],
+        "dialogues_with_clue": [89],
+        "new_dialogue":"S3: What have you done this winter holiday?\nS1:",
+        "replier":"S1",
+        "profession":"student",
+        "reply":"Nothing special . I had a get - together with some schoolmates at the high school , visited the Internet and read a couple of books which I had been longing for . How about yours ?",
+        "crucial_reply":"get - together with schoolmates high school visit Internet read books"
+    },
+    {
+        "dialogue_ids":[58, 59, 60, 87, 89, 97, 98, 99, 100],
+        "dialogues_with_clue": [89],
+        "new_dialogue":"S3: Have you seen Lilly this winter holiday?\nS1:",
+        "replier":"S1",
+        "profession":"student",
+        "reply":"Yes",
+        "crucial_reply":"Yes"
+    },
+    {
+        "dialogue_ids":[58, 59, 60, 87, 89, 97, 98, 99, 100],
+        "dialogues_with_clue": [58, 100],
+        "new_dialogue":"S3: Where would you recommend for sightseeing\nS1:",
+        "replier":"S1",
+        "profession":"student",
+        "reply":"Beijing, Great Canyon",
+        "crucial_reply":"Beijing Great Canyon"
+    },
+    {
+        "dialogue_ids":[102, 107, 108, 109, 110, 111, 119, 122, 124, 128],
+        "dialogues_with_clue": [107],
+        "new_dialogue":"S3: Do you know who is good at fixing computer?\nS1:",
+        "replier":"S1",
+        "profession":"student",
+        "reply":"Yes, Jason is.",
+        "crucial_reply":"Jason"
+    },
+    {
+        "dialogue_ids":[102, 107, 108, 109, 110, 111, 119, 122, 124, 128],
+        "dialogues_with_clue": [108],
+        "new_dialogue":"S3: Do you have a girlfriend?\nS1:",
+        "replier":"S1",
+        "profession":"student",
+        "reply":"No, I am a bachelor.",
+        "crucial_reply":"No bachelor"
+    },
+    {
+        "dialogue_ids":[102, 107, 108, 109, 110, 111, 119, 122, 124, 128],
+        "dialogues_with_clue": [108],
+        "new_dialogue":"S3: Do you want to enter into a romantic relationship?\nS1:",
+        "replier":"S1",
+        "profession":"student",
+        "reply":"I want to be a bachelor forever.",
+        "crucial_reply":"No bachelor forever"
+    },
+    {
+        "dialogue_ids":[102, 107, 108, 109, 110, 111, 119, 122, 124, 128],
+        "dialogues_with_clue": [111],
+        "new_dialogue":"S3: How did you meet Mary?\nS1:",
+        "replier":"S1",
+        "profession":"student",
+        "reply":"Mary was sitting in the cafeteria all by herself... And I came up and asked to sit by her.",
+        "crucial_reply":"cafeteria sit"
+    },
+    {
+        "dialogue_ids":[102, 107, 108, 109, 110, 111, 119, 122, 124, 128],
+        "dialogues_with_clue": [111],
+        "new_dialogue":"S3: Do you know Mary by playing badminton together?\nS1:",
+        "replier":"S1",
+        "profession":"student",
+        "reply":"No, I met her at a cafeteria.",
+        "crucial_reply":"No cafeteria"
+    },
+    {
+        "dialogue_ids":[102, 107, 108, 109, 110, 111, 119, 122, 124, 128],
+        "dialogues_with_clue": [124],
+        "new_dialogue":"S3: Have you been to art exhibition before?\nS1:",
+        "replier":"S1",
+        "profession":"student",
+        "reply":"Yes, I've been to a painting exhibition.",
+        "crucial_reply":"Yes painting"
+    },
+    {
+        "dialogue_ids":[102, 107, 108, 109, 110, 111, 119, 122, 124, 128],
+        "dialogues_with_clue": [124],
+        "new_dialogue":"S3: Why can't we take photos in paintings exhibition?\nS1:",
+        "replier":"S1",
+        "profession":"student",
+        "reply":"Because we need to protect paintings.",
+        "crucial_reply":"protect painting"
+    },
+    {
+        "dialogue_ids":[102, 107, 108, 109, 110, 111, 119, 122, 124, 128],
+        "dialogues_with_clue": [128],
+        "new_dialogue":"S3: Have you ever taken a flight?\nS1:",
+        "replier":"S1",
+        "profession":"student",
+        "reply":"Yes",
+        "crucial_reply":"Yes"
+    },
+    {
+        "dialogue_ids":[102, 107, 108, 109, 110, 111, 119, 122, 124, 128],
+        "dialogues_with_clue": [128],
+        "new_dialogue":"S3: Have you ever canceled a flight reservation\nS1:",
+        "replier":"S1",
+        "profession":"student",
+        "reply":"Yes",
+        "crucial_reply":"Yes"
+    }
+]

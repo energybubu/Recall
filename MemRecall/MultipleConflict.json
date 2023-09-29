@@ -1,0 +1,410 @@
+[
+    {
+        "dialogues_with_clue": [
+            1006,
+            1007
+        ],
+        "new_dialogue": "S1: I've never been in the semi-final or the final game of any badminton tournament before.",
+        "correct_sentence": "S1: I've been in the semi-final and the final game of the badminton tournament last time, and finally I got the championship.",
+        "points": 1,
+        "correctness": 0
+    },
+    {
+        "dialogues_with_clue": [
+            1004,
+            1005
+        ],
+        "new_dialogue": "S1: I never feel nervous about badminton competitions, so I never practice for that either.",
+        "correct_sentence": "S1: I usually practice for badminton competitions, and I often get nervous for badminton competition too.",
+        "points": 2,
+        "correctness": 0
+    },
+    {
+        "dialogues_with_clue": [
+            1006,
+            1007
+        ],
+        "new_dialogue": "S1: I always won the badminton competition without trying hard.",
+        "correct_sentence": "S1: I always trying my best so that I could win the championship of badminton competitions.",
+        "points": 1,
+        "correctness": 0
+    },
+    {
+        "dialogues_with_clue": [
+            1004,
+            1026,
+            1027
+        ],
+        "new_dialogue": "S1: Badminton is the only sport that I can play.",
+        "correct_sentence": "S1: I can play both badminton and ping-pong.",
+        "points": 1,
+        "correctness": 0
+    },
+    {
+        "dialogues_with_clue": [
+            1007,
+            1027
+        ],
+        "new_dialogue": "S1: I have only won championship in badminton competitions.",
+        "correct_sentence": "S1: I have won championships in both badminton and ping-pong competitions.",
+        "points": 1,
+        "correctness": 0
+    },
+    {
+        "dialogues_with_clue": [
+            1004,
+            1026,
+            1027
+        ],
+        "new_dialogue": "S1: Ping-pong is the only sport that I can play.",
+        "correct_sentence": "S1: I can play both badminton and ping-pong.",
+        "points": 1,
+        "correctness": 0
+    },
+    {
+        "dialogues_with_clue": [
+            1007,
+            1027
+        ],
+        "new_dialogue": "S1: I have only won championship in ping-pong competitions.",
+        "correct_sentence": "S1: I have won championships in both badminton and ping-pong competitions.",
+        "points": 1,
+        "correctness": 0
+    },
+    {
+        "dialogues_with_clue": [
+            1006,
+            1025
+        ],
+        "new_dialogue": "S1: I don't practice serves in all kinds of sports.",
+        "correct_sentence": "S1: I always practice serves in sports, such as ping-pong and badminton.",
+        "points": 2,
+        "correctness": 0
+    },
+    {
+        "dialogues_with_clue": [
+            1007,
+            1027
+        ],
+        "new_dialogue": "S1: I never shared my victory to others in any competition.",
+        "correct_sentence": "S1: I've shared my championships in ping-pong and badminton with others.",
+        "points": 1,
+        "correctness": 0
+    },
+    {
+        "dialogues_with_clue": [
+            1026,
+            1027
+        ],
+        "new_dialogue": "S1: I've never been in the semi-final or the final game of any ping-pong tournament before.",
+        "correct_sentence": "S1: I've been in the semi-final and the final game of the ping-pong tournament last time, and finally I got the championship.",
+        "points": 3,
+        "correctness": 0
+    },
+    {
+        "dialogues_with_clue": [
+            1010,
+            1011,
+            1012
+        ],
+        "new_dialogue": "S1: I have no experiences with computer engineering.",
+        "correct_sentence": "S1: I've been studying computer engineering, completed a significant project, and got an internship at a well-respected technology company.",
+        "points": 3,
+        "correctness": 0
+    },
+    {
+        "dialogues_with_clue": [
+            1010,
+            1011,
+            1012
+        ],
+        "new_dialogue": "S1: I don't really work hard to get internship at a well-respected technology company",
+        "correct_sentence": "S1: I studied diligently and completed a significant project to get internship at a well-respected technology company.",
+        "points": 2,
+        "correctness": 0
+    },
+    {
+        "dialogues_with_clue": [
+            1014,
+            1015
+        ],
+        "new_dialogue": "S1: I learned to play guitar all by myself, and I never thought about practicing it every day.",
+        "correct_sentence": "S1: I learned to play guitar by guitar lessons, and I once determined to practice daily.",
+        "points": 2,
+        "correctness": 0
+    },
+    {
+        "dialogues_with_clue": [
+            1014,
+            1016
+        ],
+        "new_dialogue": "S1: I learned to play guitar all by myself, and my first song playing on the guitar is 'Oasis' by 'Wonderwall'",
+        "correct_sentence": "S1: I learned to play guitar by guitar lessons, and my first song playing on the guitar is 'Wonderwall' by 'Oasis'.",
+        "points": 2,
+        "correctness": 0
+    },
+    {
+        "dialogues_with_clue": [
+            1013,
+            1014
+        ],
+        "new_dialogue": "S1: I was never interested in guitar, so I didn't take guitar lessons.",
+        "correct_sentence": "S1: I have recently been captivated by the guitar, so I took guitar lessons.",
+        "points": 2,
+        "correctness": 0
+    },
+    {
+        "dialogues_with_clue": [
+            1014,
+            1015
+        ],
+        "new_dialogue": "S1: I learned to play the guitar all by myself, and I found it's easy.",
+        "correct_sentence": "S1: I take guitar lessons to learn guitar, and I found it challenging.",
+        "points": 2,
+        "correctness": 0
+    },
+    {
+        "dialogues_with_clue": [
+            1018,
+            1021
+        ],
+        "new_dialogue": "S1: My father taught me how to drive and then I passed the driving test.",
+        "correct_sentence": "S1: I took driving lessons in a driving school, and then I passed the driving test.",
+        "points": 1,
+        "correctness": 0
+    },
+    {
+        "dialogues_with_clue": [
+            1019,
+            1020
+        ],
+        "new_dialogue": "S1: I first learned parallel parking skill before I mastered the fundamentals",
+        "correct_sentence": "S1: I first learned and mastered the fundamentals, and then I practiced parking skills.",
+        "points": 1,
+        "correctness": 0
+    },
+    {
+        "dialogues_with_clue": [
+            1019,
+            1020
+        ],
+        "new_dialogue": "S1: I never feel nervous and scared, and I don't spend much time practicing parallel parking skills.",
+        "correct_sentence": "S1: It was a bit intimidating in my first driving lesson, and I practicing my parallel parking skils for hours.",
+        "points": 2,
+        "correctness": 0
+    },
+    {
+        "dialogues_with_clue": [
+            1023,
+            1024
+        ],
+        "new_dialogue": "S1: I don't know where to take ping-pong lessons, so I never took ping-pong lessons.",
+        "correct_sentence": "S1: I discovered a nearby table tennis club that provides training opportunities, so I took lessons there.",
+        "points": 2,
+        "correctness": 0
+    },
+    {
+        "dialogues_with_clue": [
+            1006,
+            1007
+        ],
+        "new_dialogue": "S1: I've been in the semi-final and the final game of the badminton tournament last time, and finally I got the championship.",
+        "correct_sentence": "S1: I've been in the semi-final and the final game of the badminton tournament last time, and finally I got the championship.",
+        "points": 1,
+        "correctness": 1
+    },
+    {
+        "dialogues_with_clue": [
+            1004,
+            1005
+        ],
+        "new_dialogue": "S1: I usually practice for badminton competitions, and I often get nervous for badminton competition too.",
+        "correct_sentence": "S1: I usually practice for badminton competitions, and I often get nervous for badminton competition too.",
+        "points": 2,
+        "correctness": 1
+    },
+    {
+        "dialogues_with_clue": [
+            1006,
+            1007
+        ],
+        "new_dialogue": "S1: I always trying my best so that I could win the championship of badminton competitions.",
+        "correct_sentence": "S1: I always trying my best so that I could win the championship of badminton competitions.",
+        "points": 1,
+        "correctness": 1
+    },
+    {
+        "dialogues_with_clue": [
+            1004,
+            1026,
+            1027
+        ],
+        "new_dialogue": "S1: I can play both badminton and ping-pong.",
+        "correct_sentence": "S1: I can play both badminton and ping-pong.",
+        "points": 1,
+        "correctness": 1
+    },
+    {
+        "dialogues_with_clue": [
+            1007,
+            1027
+        ],
+        "new_dialogue": "S1: I have won championships in both badminton and ping-pong competitions.",
+        "correct_sentence": "S1: I have won championships in both badminton and ping-pong competitions.",
+        "points": 1,
+        "correctness": 1
+    },
+    {
+        "dialogues_with_clue": [
+            1004,
+            1026,
+            1027
+        ],
+        "new_dialogue": "S1: I can play both badminton and ping-pong.",
+        "correct_sentence": "S1: I can play both badminton and ping-pong.",
+        "points": 1,
+        "correctness": 1
+    },
+    {
+        "dialogues_with_clue": [
+            1007,
+            1027
+        ],
+        "new_dialogue": "S1: I have won championships in both badminton and ping-pong competitions.",
+        "correct_sentence": "S1: I have won championships in both badminton and ping-pong competitions.",
+        "points": 1,
+        "correctness": 1
+    },
+    {
+        "dialogues_with_clue": [
+            1006,
+            1025
+        ],
+        "new_dialogue": "S1: I always practice serves in sports, such as ping-pong and badminton.",
+        "correct_sentence": "S1: I always practice serves in sports, such as ping-pong and badminton.",
+        "points": 2,
+        "correctness": 1
+    },
+    {
+        "dialogues_with_clue": [
+            1007,
+            1027
+        ],
+        "new_dialogue": "S1: I've shared my championships in ping-pong and badminton with others.",
+        "correct_sentence": "S1: I've shared my championships in ping-pong and badminton with others.",
+        "points": 1,
+        "correctness": 1
+    },
+    {
+        "dialogues_with_clue": [
+            1026,
+            1027
+        ],
+        "new_dialogue": "S1: I've been in the semi-final and the final game of the ping-pong tournament last time, and finally I got the championship.",
+        "correct_sentence": "S1: I've been in the semi-final and the final game of the ping-pong tournament last time, and finally I got the championship.",
+        "points": 3,
+        "correctness": 1
+    },
+    {
+        "dialogues_with_clue": [
+            1010,
+            1011,
+            1012
+        ],
+        "new_dialogue": "S1: I've been studying computer engineering, completed a significant project, and got an internship at a well-respected technology company.",
+        "correct_sentence": "S1: I've been studying computer engineering, completed a significant project, and got an internship at a well-respected technology company.",
+        "points": 3,
+        "correctness": 1
+    },
+    {
+        "dialogues_with_clue": [
+            1010,
+            1011,
+            1012
+        ],
+        "new_dialogue": "S1: I studied diligently and completed a significant project to get internship at a well-respected technology company.",
+        "correct_sentence": "S1: I studied diligently and completed a significant project to get internship at a well-respected technology company.",
+        "points": 2,
+        "correctness": 1
+    },
+    {
+        "dialogues_with_clue": [
+            1014,
+            1015
+        ],
+        "new_dialogue": "S1: I learned to play guitar by guitar lessons, and I once determined to practice daily.",
+        "correct_sentence": "S1: I learned to play guitar by guitar lessons, and I once determined to practice daily.",
+        "points": 2,
+        "correctness": 1
+    },
+    {
+        "dialogues_with_clue": [
+            1014,
+            1016
+        ],
+        "new_dialogue": "S1: I learned to play guitar by guitar lessons, and my first song playing on the guitar is 'Wonderwall' by 'Oasis'.",
+        "correct_sentence": "S1: I learned to play guitar by guitar lessons, and my first song playing on the guitar is 'Wonderwall' by 'Oasis'.",
+        "points": 2,
+        "correctness": 1
+    },
+    {
+        "dialogues_with_clue": [
+            1013,
+            1014
+        ],
+        "new_dialogue": "S1: I have recently been captivated by the guitar, so I took guitar lessons.",
+        "correct_sentence": "S1: I have recently been captivated by the guitar, so I took guitar lessons.",
+        "points": 2,
+        "correctness": 1
+    },
+    {
+        "dialogues_with_clue": [
+            1014,
+            1015
+        ],
+        "new_dialogue": "S1: I take guitar lessons to learn guitar, and I found it challenging.",
+        "correct_sentence": "S1: I take guitar lessons to learn guitar, and I found it challenging.",
+        "points": 2,
+        "correctness": 1
+    },
+    {
+        "dialogues_with_clue": [
+            1018,
+            1021
+        ],
+        "new_dialogue": "S1: I took driving lessons in a driving school, and then I passed the driving test.",
+        "correct_sentence": "S1: I took driving lessons in a driving school, and then I passed the driving test.",
+        "points": 1,
+        "correctness": 1
+    },
+    {
+        "dialogues_with_clue": [
+            1019,
+            1020
+        ],
+        "new_dialogue": "S1: I first learned and mastered the fundamentals, and then I practiced parking skills.",
+        "correct_sentence": "S1: I first learned and mastered the fundamentals, and then I practiced parking skills.",
+        "points": 1,
+        "correctness": 1
+    },
+    {
+        "dialogues_with_clue": [
+            1019,
+            1020
+        ],
+        "new_dialogue": "S1: It was a bit intimidating in my first driving lesson, and I practicing my parallel parking skils for hours.",
+        "correct_sentence": "S1: It was a bit intimidating in my first driving lesson, and I practicing my parallel parking skils for hours.",
+        "points": 2,
+        "correctness": 1
+    },
+    {
+        "dialogues_with_clue": [
+            1023,
+            1024
+        ],
+        "new_dialogue": "S1: I discovered a nearby table tennis club that provides training opportunities, so I took lessons there.",
+        "correct_sentence": "S1: I discovered a nearby table tennis club that provides training opportunities, so I took lessons there.",
+        "points": 2,
+        "correctness": 1
+    }
+]

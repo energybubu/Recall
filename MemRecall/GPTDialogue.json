@@ -1,0 +1,212 @@
+[
+    {
+        "topic_id": 1,
+        "dialogue": "S1: I have enrolled a competition of badminton next Saturday.\nS2: Really! How many participants are there in this competition?\nS1: It's about 20 participants in total.\nS2: Wishing for good news!",
+        "rephrased_dialogue": "S1: I have signed up for a badminton competition next Saturday.\nS2: How many participants are competing in this competition?\nS1: There are approximately 20 participants in total.\nS2: I'm hoping for positive outcomes.",
+        "dialogue_id": 1003
+    },
+    {
+        "topic_id": 1,
+        "dialogue": "S1: Do you want to play badminton tomorrow? I have a competition next Saturday. I need to practice for that.\nS2: Wow! That's nice. Tomorrow will be ok. How about at 5 p.m.\nS1: Ok! See you on the court!\nS2: Nice!",
+        "rephrased_dialogue": "S1: Would you like to play badminton tomorrow? I have a competition next Saturday.\nS2: Wow! That's great. Tomorrow will be better. How about at 5 p.m.?\nS1: Certainly! I look forward to seeing you on the court.\nS2: Me too!",
+        "dialogue_id": 1004
+    },
+    {
+        "topic_id": 1,
+        "dialogue": "S1: The competition is on tomorrow. I feel so nervous now.\nS2: Take it easy. You have put extensive effort in practicing for that.\nS1: But I still think that's not enough.\nS2: Take it easy!",
+        "rephrased_dialogue": "S1: I'm feeling anxious about the competition tomorrow.\nS2: Try to relax and appreciate your hard work in preparing for this.\nS1: However, I still believe that it is not sufficient.\nS2: Ease up!",
+        "dialogue_id": 1005
+    },
+    {
+        "topic_id": 1,
+        "dialogue": "S1: I can't believe it! I made it to the final of the badminton competition!\nS2: That's amazing! Congratulations! How was the semi-final match?\nS1: It was intense. My opponent was tough, but I managed to win in three sets.\nS2: You must have played exceptionally well. I'm so proud of you!\nS1: Thank you!",
+        "rephrased_dialogue": "S1: I am astonished to have reached the finals of the badminton competition!\nS2: Congratulations! The semi-final match was amazing.\nS1: The match was highly competitive. Although my opponent presented a strong challenge, the enhanced serves from the practice sessions I had with my friends last time help me defeat the opponent.\nS2: I am immensely proud of your exceptional performance.\nS1: Thank you very much!",
+        "dialogue_id": 1006
+    },
+    {
+        "topic_id": 1,
+        "dialogue": "S1: I did it! I won the badminton competition!\nS2: No way! That's incredible! How did the final match go?\nS1: It was an epic battle. Both of us fought hard, but I managed to come out on top in the end.\nS2: You're a champion! I knew you could do it. How do you feel?\nS1: I feel ecstatic, thrilled, and relieved. All the hard work and training paid off.",
+        "rephrased_dialogue": "S1: I'm thrilled to have won the badminton competition!\nS2: Wow! That's amazing! How did the final match turn out?\nS1: The battle was intense, but I ultimately emerged victorious.\nS2: You're a champion! I had faith in you all along. How do you feel?\nS1: I'm overjoyed, thrilled, and relieved. My hard work and training finally paid off.",
+        "dialogue_id": 1007
+    },
+    {
+        "topic_id": 2,
+        "dialogue": "S1: I've been thinking a lot about my future lately.\nS2: What are you considering?\nS1: I'm thinking of pursuing a career in computer engineering.\nS2: That sounds like a great choice. Have you done any research on it?\nS1: Yes, I've been reading about it and it seems really interesting.",
+        "rephrased_dialogue": "S1: Lately, I have been contemplating my future extensively.\nS2: What are you contemplating?\nS1: Contemplating a career in computer engineering.\nS2: I'm pretty sure that choice is a good one. Have you looked into it at all?\nS1: Yes, I have been exploring the topic and it appears to be quite captivating.",
+        "dialogue_id": 1008
+    },
+    {
+        "topic_id": 2,
+        "dialogue": "S1: I've decided to enroll in a computer engineering course at university.\nS2: That's fantastic! When does it start?\nS1: Classes start next month. I can't wait to learn more about the field.\nS2: I'm sure you'll excel in it. Best of luck!",
+        "rephrased_dialogue": "S1: I have made the decision to enroll in a computer engineering program at university.\nS2: Fantastic! When does it begin?\nS1: I am eagerly anticipating the commencement of classes next month. I am eager to gain more knowledge in this field.\nS2: I have no doubt that you will succeed in this endeavor. Good luck!",
+        "dialogue_id": 1009
+    },
+    {
+        "topic_id": 2,
+        "dialogue": "S1: I've been studying computer engineering for a few months now.\nS2: How is it going so far?\nS1: It's challenging, but I'm enjoying every bit of it. There's so much to learn.\nS2: That's great to hear. Keep up the good work!",
+        "rephrased_dialogue": "S1: For approximately four months, I have been diligently studying computer engineering.\nS2: So far, how is it going?\nS1: Challenging but enjoyable, there's a lot to gain from the experience.\nS2: Thank you for the positive feedback. Please continue to strive for excellence.",
+        "dialogue_id": 1010
+    },
+    {
+        "topic_id": 2,
+        "dialogue": "S1: I just completed a major project in computer engineering.\nS2: Congratulations! What was the project about?\nS1: It was about designing and implementing a software application. It was a lot of work, but I'm proud of the end result.\nS2: That's impressive! You're really diving deep into the field.",
+        "rephrased_dialogue": "S1: I have successfully completed a significant project in computer engineering.\nS2: Congratulations! Can you tell me more about the project you were working on?\nS1: The software application was designed and implemented with considerable effort. Although it was challenging, I am proud of the final result.\nS2: That's impressive! You're delving deeply into the field.",
+        "dialogue_id": 1011
+    },
+    {
+        "topic_id": 2,
+        "dialogue": "S1: I recently got an internship at a renowned tech company.\nS2: That's amazing! How did you manage to land that opportunity?\nS1: I showcased my skills and knowledge during the interview process. They were impressed with my passion for computer engineering.\nS2: That's a big step towards your career goals. Well done!",
+        "rephrased_dialogue": "S1: I am currently interning at a well-respected technology company.\nS2: That's incredible! How did you secure such an opportunity?\nS1: During the interview process, I displayed the project I made before, and all the interviewer love it.\nS2: Congratulations on taking a significant stride towards achieving your career aspirations. Well done!",
+        "dialogue_id": 1012
+    },
+    {
+        "topic_id": 3,
+        "dialogue": "S1: I've always been fascinated by music.\nS2: What kind of music do you enjoy?\nS1: I love all genres, but I've been particularly drawn to the guitar lately.\nS2: That's great! Have you ever played before?\nS1: No, I'm a complete beginner, but I want to learn.",
+        "rephrased_dialogue": "S1: From a young age, music has captivated my interest.\nS2: What type of instruments do you prefer?\nS1: While enjoying a wide range of genres, I have recently been captivated by the guitar.\nS2: That's fantastic! Have you ever played this particular instrument before?\nS1: Yes, I'm a beginner, but I'm eager to learn.",
+        "dialogue_id": 1013
+    },
+    {
+        "topic_id": 3,
+        "dialogue": "S1: I've decided to take guitar lessons.\nS2: That's awesome! Where will you be taking lessons?\nS1: There's a music school nearby that offers guitar classes.\nS2: That's convenient. I'm sure you'll become a skilled guitarist in no time.",
+        "rephrased_dialogue": "S1: I have resolved to take guitar lessons.\nS2: That's fantastic! Where will you be taking your lessons?\nS1: A nearby music school provides guitar lessons.\nS2: That's fortunate. I'm confident you'll master guitar proficiency soon.",
+        "dialogue_id": 1014
+    },
+    {
+        "topic_id": 3,
+        "dialogue": "S1: Learning the guitar is harder than I thought.\nS2: It can be challenging at first, but don't give up.\nS1: I'm determined to stick with it and practice every day.\nS2: That's the spirit! You'll see progress with time and effort.",
+        "rephrased_dialogue": "S1: Initially, I found learning the guitar more challenging than anticipated.\nS2: Initially, it may be difficult, but perseverance is key.\nS1: I'm resolute in my commitment to practice daily.\nS2: That's the attitude! With dedication and hard work, you'll observe growth over time.",
+        "dialogue_id": 1015
+    },
+    {
+        "topic_id": 3,
+        "dialogue": "S1: I just learned my first song on the guitar!\nS2: Congratulations! Which song did you learn?\nS1: I learned to play 'Wonderwall' by Oasis. It feels amazing to make music.\nS2: That's a classic choice. Keep practicing and learning new songs.",
+        "rephrased_dialogue": "S1: I learned my first song on the guitar!\nS2: Congratulations! Which song did you recently learn?\nS1: I recently acquired proficiency in playing 'Wonderwall' by Oasis. The experience is exhilarating.\nS2: That's a well-worn path. Keep honing your skills and expanding your musical knowledge.",
+        "dialogue_id": 1016
+    },
+    {
+        "topic_id": 3,
+        "dialogue": "S1: I performed at an open mic night with my guitar!\nS2: That's incredible! How did it go?\nS1: It was nerve-wracking, but the audience enjoyed my performance.\nS2: That's a huge achievement. Your guitar skills are really improving!",
+        "rephrased_dialogue": "S1: I played 'Wonderwall' on the guitar at an open mic night.\nS2: That's amazing! How did it go?\nS1: My performance was nerve-wracking, but the audience appreciated it.\nS2: Your guitar skills are progressing nicely.",
+        "dialogue_id": 1017
+    },
+    {
+        "topic_id": 4,
+        "dialogue": "S1: I've been thinking about learning how to drive.\nS2: That's a useful skill to have. Have you started taking any driving lessons?\nS1: Yes, I've enrolled in a driving school and I've had a few lessons so far.\nS2: That's great. Driving can be challenging but with practice, you'll get the hang of it.",
+        "rephrased_dialogue": "S1: I've been contemplating acquiring driving skills.\nS2: It is a valuable ability to possess. Have you begun attending driving lessons?\nS1: Yes, I have enrolled in a driving school.\nS2: Nice! With practice, driving can become manageable.",
+        "dialogue_id": 1018
+    },
+    {
+        "topic_id": 4,
+        "dialogue": "S1: I had my first driving lesson today.\nS2: How did it go?\nS1: It was a bit nerve-wracking, but my instructor was patient and guided me through the basics.\nS2: That's understandable. It takes time to feel comfortable behind the wheel.",
+        "rephrased_dialogue": "S1: Today, I took my first driving lesson.\nS2: Did it go well?\nS1: It was a bit intimidating, but my instructor was patient and helped me master the fundamentals.\nS2: It is to be expected. It requires familiarity to feel at ease while driving.",
+        "dialogue_id": 1019
+    },
+    {
+        "topic_id": 4,
+        "dialogue": "S1: I've been practicing parallel parking for hours.\nS2: Parallel parking can be tricky. How's your progress?\nS1: It's getting better. I'm starting to get the hang of maneuvering the car into tight spaces.\nS2: Keep practicing, and it will become second nature to you.",
+        "rephrased_dialogue": "S1: I've been honing my parallel parking skills for hours.\nS2: Are you finding parallel parking difficult? How's your progress?\nS1: I am gradually becoming proficient in driving the car into confined areas.\nS2: With practice, it will become instinctive for you.",
+        "dialogue_id": 1020
+    },
+    {
+        "topic_id": 4,
+        "dialogue": "S1: I just passed my driving test!\nS2: Congratulations! That's a big accomplishment. How was the test?\nS1: It was challenging, but I stayed calm and followed all the rules. I'm so excited to have my driver's license now.\nS2: Well done! Enjoy the freedom of being on the road.",
+        "rephrased_dialogue": "S1: Big news! I just passed the driving test!\nS2: Congratulations! That's quite an achievement. How did the test go?\nS1: It was a difficult situation, but I remained composed and followed all the guidelines. I'm thrilled to finally have my driver's license.\nS2: You really did a greak job! Rejoice in the liberation of traveling independently.",
+        "dialogue_id": 1021
+    },
+    {
+        "topic_id": 4,
+        "dialogue": "S1: I'm planning a road trip with friends.\nS2: That sounds like fun! Are you confident in your driving skills?\nS1: Yes, I've gained enough experience and I feel comfortable driving on highways and long distances.\nS2: Have a great trip and drive safely!",
+        "rephrased_dialogue": "S1: I am organizing a journey with friends.\nS2: Do you think it would be enjoyable to engage in this activity?\nS1: Yes, I have acquired sufficient experience and feel confident driving on highways and long distances.\nS2: Wishing you a wonderful journey and a safe drive.",
+        "dialogue_id": 1022
+    },
+    {
+        "topic_id": 5,
+        "dialogue": "S1: I've been interested in learning how to play ping-pong.\nS2: That's a fun sport! Have you found a place where you can take lessons?\nS1: Yes, I found a local table tennis club that offers coaching sessions.\nS2: That's great. Table tennis can be quite fast-paced and requires good reflexes.",
+        "rephrased_dialogue": "S1: I've been curious to gain proficiency in playing ping-pong.\nS2: I enjoy this particular sport! Have you discovered a location where you can receive instruction?\nS1: I discovered a nearby table tennis club that provides training opportunities.\nS2: That's great! Table tennis requires quick reflexes which can provide so much entertainment.",
+        "dialogue_id": 1023
+    },
+    {
+        "topic_id": 5,
+        "dialogue": "S1: I had my first ping-pong lesson today.\nS2: How was it?\nS1: It was challenging but exciting. My coach taught me the basic techniques and footwork.\nS2: That's a good start. Keep practicing and you'll improve.",
+        "rephrased_dialogue": "S1: Today, I received my first ping-pong lesson.\nS2: Did it meet your expectations?\nS1: Learning the basic techniques and footwork from my coach was both challenging and exhilarating.\nS2: A promising beginning. Keep working and you'll enhance your skills.",
+        "dialogue_id": 1024
+    },
+    {
+        "topic_id": 5,
+        "dialogue": "S1: I've been practicing my serves in ping-pong.\nS2: Serving is an important skill. How's your progress?\nS1: It's getting better. I'm working on different types of serves to keep my opponents guessing.\nS2: That's smart. Variety in your serves can give you an advantage.",
+        "rephrased_dialogue": "S1: I've been honing my serve skills in ping-pong.\nS2: Are you making progress in the area of serving?\nS1: It is improving. I am focusing on various types of serves to keep my opponents uncertain.\nS2: Adding diversity to your serves can give you a competitive edge.",
+        "dialogue_id": 1025
+    },
+    {
+        "topic_id": 5,
+        "dialogue": "S1: I participated in a ping-pong tournament and made it to the semifinals.\nS2: Congratulations! That's impressive. How were your matches?\nS1: They were intense. I had to adapt to different playing styles, but I managed to win some tough matches.\nS2: Well done! You're making great strides in ping-pong.",
+        "rephrased_dialogue": "S1: I attended a ping-pong tournament and advanced to the semifinals.\nS2: Thank you! Your performance was quite impressive. How did your matches go?\nS1: I had to adapt to different aggressive playing styles, but I managed to win some tough matches.\nS2: Congratulations! You're progressing nicely in table tennis.",
+        "dialogue_id": 1026
+    },
+    {
+        "topic_id": 5,
+        "dialogue": "S1: I won the ping-pong tournament!\nS2: That's amazing! How did the final match go?\nS1: It was a close match, but I stayed focused and played my best. I'm so thrilled to have come out as the champion.\nS2: You're a ping-pong star now! Keep up the great work.",
+        "rephrased_dialogue": "S1: I am pleased to announce that I have emerged victorious in the ping-pong tournament!\nS2: That's incredible! How did the final match turn out?\nS1: I was in a tight contest, but I maintained my focus and played my best. I'm overjoyed to have emerged as the winner.\nS2: You're a ping-pong champion! Keep up the excellent performance.",
+        "dialogue_id": 1027
+    },
+    {
+        "topic_id": 6,
+        "dialogue": "S1: I just finished my morning yoga session. It's a perfect way to start the day.\nS2: That's great! How long do you usually practice for?\nS1: I dedicate around 30 minutes each morning to stretch and find inner peace.\nS2: It's a wonderful practice for physical and mental well-being.",
+        "dialogue_id": 1028,
+        "rephrased_dialogue": "S1: Performing yoga in the morning is an excellent way to energize and set a positive tone for the day. I just finished it.\nS2: That's fantastic! How often do you typically practice?\nS1: Each morning, I spend approximately 30 minutes engaging in stretching exercises and cultivating inner peace.\nS2: A fantastic routine for physical and mental health."
+    },
+    {
+        "topic_id": 6,
+        "dialogue": "S1: I spent the afternoon gardening in my backyard. It's so therapeutic.\nS2: What kind of plants do you have in your garden?\nS1: I have a variety of flowers, herbs, and some vegetables. It's a colorful and serene oasis.\nS2: Gardening is a peaceful and rewarding activity.",
+        "dialogue_id": 1029,
+        "rephrased_dialogue": "S1: I spent the afternoon gardening in my backyard. It was a delightful and therapeutic experience.\nS2: What types of plants do you have in your garden?\nS1: A diverse assortment of flowers, herbs, and vegetables creates a vibrant and tranquil haven.\nS2: Gardening can be a serene and fulfilling pursuit."
+    },
+    {
+        "topic_id": 6,
+        "dialogue": "S1: I attended a pottery class in the evening. It's my newfound passion.\nS2: That's amazing! What kind of pottery did you make today?\nS1: We focused on creating ceramic bowls and experimenting with different glazes.\nS2: Exploring pottery as a hobby sounds both artistic and enjoyable.",
+        "dialogue_id": 1030,
+        "rephrased_dialogue": "S1: Attending a pottery class in the evening has become my newfound passion. I attened one in the evening.\nS2: That's incredible! What type of pottery did you create today?\nS1: We concentrated on crafting ceramic bowls and explored various glaze options.\nS2: Pottery is an enjoyable artistic pursuit."
+    },
+    {
+        "topic_id": 6,
+        "dialogue": "S1: I wrapped up my day by reading a captivating novel before bedtime.\nS2: Oh, what book are you currently engrossed in?\nS1: I'm immersed in a thrilling mystery novel that keeps me on the edge of my seat.\nS2: Escaping into a gripping book is a wonderful way to relax and unwind.",
+        "dialogue_id": 1031,
+        "rephrased_dialogue": "S1: As a way to end my day, I indulged in a captivating novel before going to bed.\nS2: Are you currently engrossed in any particular book?\nS1: I'm engrossed in a captivating thriller that keeps me on the edge of my seat.\nS2: Reading a captivating book is an excellent method to unwind and escape from daily stress."
+    },
+    {
+        "topic_id": 6,
+        "dialogue": "S1: I ended the day by journaling and reflecting on my experiences.\nS2: That's a great habit! What do you usually write about in your journal?\nS1: I jot down my thoughts, gratitude, and any significant moments from the day. It helps me unwind and gain clarity.\nS2: Journaling allows for self-reflection and capturing meaningful memories.",
+        "dialogue_id": 1032,
+        "rephrased_dialogue": "S1: I ended the day by reflecting on my experiences and writing in my journal.\nS2: Sounds great! What kind of content do you usually record in your journal?\nS1: I usually jot down my thoughts, feelings of gratitude, and noteworthy events from the day which provides me with clarity and relaxation.\nS2: Journaling provides an opportunity for introspection and preserving cherished memories."
+    },
+    {
+        "topic_id": 7,
+        "dialogue": "S1: I just finished reviewing the project requirements. It's crucial to have a clear understanding from the start.\nS2: Absolutely! What are the key elements you identified in the requirements?\nS1: I noted down the scope, deliverables, timeline, and resources needed to complete the project.\nS2: Having a well-defined set of requirements is essential for a successful project.",
+        "dialogue_id": 1033,
+        "rephrased_dialogue": "S1: It is essential to gain a thorough understanding of the project requirements from the outset.\nS2: Sure! What are the key points you got in the requirements?\nS1: To effectively execute the project, I documented the project scope, deliverables, timeline, and necessary resources.\nS2: A well-defined set of requirements is necessary for a project's success."
+    },
+    {
+        "topic_id": 7,
+        "dialogue": "S1: Today, I organized a team meeting to discuss the project plan.\nS2: That's a great initiative! How did the meeting go?\nS1: We brainstormed ideas, assigned tasks, and set realistic deadlines for each team member.\nS2: Collaborative planning ensures everyone is on the same page and promotes efficiency.",
+        "dialogue_id": 1034,
+        "rephrased_dialogue": "S1: Today, I convened a team meeting to deliberate on the project plan.\nS2: The meeting was a success! How did it go?\nS1: Brainstormed ideas, delegated tasks, and established deadlines for each team member.\nS2: Effective collaboration among stakeholders guarantees alignment and enhances productivity."
+    },
+    {
+        "topic_id": 7,
+        "dialogue": "S1: I spent the day conducting research and gathering relevant data for the project.\nS2: What sources did you find most helpful for your research?\nS1: I utilized online databases, scholarly articles, and industry reports to gather reliable information.\nS2: Thorough research is vital for making informed decisions and achieving project goals.",
+        "dialogue_id": 1035,
+        "rephrased_dialogue": "S1: I spent the day gathering relevant data for the project.\nS2: Which sources were most helpful in your research?\nS1: I leveraged online databases, scholarly articles, and industry reports to obtain dependable data.\nS2: In order to make well-informed decisions and achieve project goals, thorough research is essential."
+    },
+    {
+        "topic_id": 7,
+        "dialogue": "S1: Today, I began working on the project tasks by prioritizing the most critical ones.\nS2: How did you determine the order of priority?\nS1: I assessed the dependencies, deadlines, and impact of each task on the overall project timeline.\nS2: Prioritizing tasks ensures a focused approach and efficient progress.",
+        "dialogue_id": 1036,
+        "rephrased_dialogue": "S1: Today, I started tackling the most urgent tasks associated with the project.\nS2: How did you decide the order of priority?\nS1: By assessing the dependencies, deadlines, and impact of each task on the overall project timeline.\nS2: Prioritizing tasks promotes a targeted approach and swift advancement."
+    },
+    {
+        "topic_id": 7,
+        "dialogue": "S1: I'm now in the phase of reviewing and refining the project deliverables.\nS2: How do you ensure the quality of the deliverables?\nS1: I follow a checklist and involve stakeholders in the review process to address any feedback or improvements.\nS2: Ensuring high-quality deliverables guarantees a successful project outcome.",
+        "dialogue_id": 1037,
+        "rephrased_dialogue": "S1: In this phase, I am currently reviewing and refining the project's deliverables.\nS2: How do you guarantee the quality of the deliverables?\nS1: I use a checklist to review my work and collaborate with stakeholders to address any feedback or improvements.\nS2: Ensuring high-quality deliverables is essential for project success."
+    }
+]

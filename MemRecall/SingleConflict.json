@@ -1,0 +1,802 @@
+[
+    {
+        "dialogues_with_clue": [
+            215
+        ],
+        "new_dialogue": "S1: Have you watched the TV series 'Click'?",
+        "correct_sentence": "S1: Have you watched the movie 'Click'?",
+        "correctness": 0
+    },
+    {
+        "dialogues_with_clue": [
+            239
+        ],
+        "new_dialogue": "S1: I've came up an idea to go to France next summer vacation.",
+        "correct_sentence": "S1: I've came up an idea to go to Italy next summer vacation.",
+        "correctness": 0
+    },
+    {
+        "dialogues_with_clue": [
+            244
+        ],
+        "new_dialogue": "S1: Mel is still single.",
+        "correct_sentence": "S1: Mel is not available.",
+        "correctness": 0
+    },
+    {
+        "dialogues_with_clue": [
+            249
+        ],
+        "new_dialogue": "S1: I don't know any famous national park in the US.",
+        "correct_sentence": "S1: I have heard there are many famous national park in the US.",
+        "correctness": 0
+    },
+    {
+        "dialogues_with_clue": [
+            270
+        ],
+        "new_dialogue": "S1: I don't know how to play poker.",
+        "correct_sentence": "S1: I know how to play poker and I can teach you.",
+        "correctness": 0
+    },
+    {
+        "dialogues_with_clue": [
+            270
+        ],
+        "new_dialogue": "S1: My dad passed away long time ago.",
+        "correct_sentence": "S1: My dad played poker with me.",
+        "correctness": 0
+    },
+    {
+        "dialogues_with_clue": [
+            272
+        ],
+        "new_dialogue": "S1: I don't know where to buy old music boxes.",
+        "correct_sentence": "S1: I can try shopping at a flea market.",
+        "correctness": 0
+    },
+    {
+        "dialogues_with_clue": [
+            272
+        ],
+        "new_dialogue": "S1: I've never heard of the flea market.",
+        "correct_sentence": "S1: I've heard of the flea market.",
+        "correctness": 0
+    },
+    {
+        "dialogues_with_clue": [
+            272
+        ],
+        "new_dialogue": "S1: I don't know how to find a flea market.",
+        "correct_sentence": "S1: I've heard of the flea market.",
+        "correctness": 0
+    },
+    {
+        "dialogues_with_clue": [
+            272
+        ],
+        "new_dialogue": "S1: You can't find a flea market by checking the local paper.",
+        "correct_sentence": "S1: You can find a flea market by checking the local paper.",
+        "correctness": 0
+    },
+    {
+        "dialogues_with_clue": [
+            272
+        ],
+        "new_dialogue": "S1: You can't find a flea market by searching it online.",
+        "correct_sentence": "S1: You can find a flea market by searching it online.",
+        "correctness": 0
+    },
+    {
+        "dialogues_with_clue": [
+            312
+        ],
+        "new_dialogue": "S1: I didn't buy any gift for my father this Father's Day.",
+        "correct_sentence": "S1: I bought some gifts for my father this Father's Day.",
+        "correctness": 0
+    },
+    {
+        "dialogues_with_clue": [
+            3
+        ],
+        "new_dialogue": "S1: Mary learns to speak Latin by osmosis within two months.",
+        "correct_sentence": "S1: Mary learns to speak Latin by osmosis within three months.",
+        "correctness": 0
+    },
+    {
+        "dialogues_with_clue": [
+            7
+        ],
+        "new_dialogue": "S1: To hire a motorbike, you need $300 for 3 days, $500 for 7 days.",
+        "correct_sentence": "S1: To hire a motorbike, you need $300 for 3 days, $600 for 7 days.",
+        "correctness": 0
+    },
+    {
+        "dialogues_with_clue": [
+            7
+        ],
+        "new_dialogue": "S1: To hire a motorbike, you need $400 for 3 days, $600 for 7 days.",
+        "correct_sentence": "S1: To hire a motorbike, you need $300 for 3 days, $600 for 7 days.",
+        "correctness": 0
+    },
+    {
+        "dialogues_with_clue": [
+            7
+        ],
+        "new_dialogue": "S1: To hire a motorbike, you need $400 for 3 days, $500 for 7 days.",
+        "correct_sentence": "S1: To hire a motorbike, you need $300 for 3 days, $600 for 7 days.",
+        "correctness": 0
+    },
+    {
+        "dialogues_with_clue": [
+            11
+        ],
+        "new_dialogue": "S1: The piano took four people to move it.",
+        "correct_sentence": "S1: The piano took three people to move it.",
+        "correctness": 0
+    },
+    {
+        "dialogues_with_clue": [
+            11
+        ],
+        "new_dialogue": "S1: It was easy to get the piano here.",
+        "correct_sentence": "S1: It was hard to get the piano here.",
+        "correctness": 0
+    },
+    {
+        "dialogues_with_clue": [
+            17
+        ],
+        "new_dialogue": "S1: Jim borrowed money from Derek.",
+        "correct_sentence": "S1: Jim borrowed money from Nick.",
+        "correctness": 0
+    },
+    {
+        "dialogues_with_clue": [
+            17
+        ],
+        "new_dialogue": "S1: You don't have to worry about how to repay Nick",
+        "correct_sentence": "S1: You have to worry about how to repay Nick. He is a loan shark.",
+        "correctness": 0
+    },
+    {
+        "dialogues_with_clue": [
+            17
+        ],
+        "new_dialogue": "S1: Jim is very rich and has no need to worry about money.",
+        "correct_sentence": "S1: Jim was so desperate that he borrowed money from Nick, a loan shark.",
+        "correctness": 0
+    },
+    {
+        "dialogues_with_clue": [
+            20
+        ],
+        "new_dialogue": "S1: I think watching TV series is meaningful.",
+        "correct_sentence": "S1: I think watching TV series is sheer waste of time to watch it.",
+        "correctness": 0
+    },
+    {
+        "dialogues_with_clue": [
+            20
+        ],
+        "new_dialogue": "S1: Lots of people hates watching TV series.",
+        "correct_sentence": "S1: There are still a lot of people watch TV series.",
+        "correctness": 0
+    },
+    {
+        "dialogues_with_clue": [
+            36
+        ],
+        "new_dialogue": "S1: My favorite kind of films is feature film",
+        "correct_sentence": "S1: I don't like feature films.",
+        "correctness": 0
+    },
+    {
+        "dialogues_with_clue": [
+            36
+        ],
+        "new_dialogue": "S1: I don't like documentary films at all.",
+        "correct_sentence": "S1: I like to see some documentary films.",
+        "correctness": 0
+    },
+    {
+        "dialogues_with_clue": [
+            36
+        ],
+        "new_dialogue": "S1: I like films that lose contact with reality.",
+        "correct_sentence": "S1: I don't like feature films. I think sometimes it loses contact with reality.",
+        "correctness": 0
+    },
+    {
+        "dialogues_with_clue": [
+            37
+        ],
+        "new_dialogue": "S1: I never borrowed things from others.",
+        "correct_sentence": "S1: I've borrowed pen from Ann.",
+        "correctness": 0
+    },
+    {
+        "dialogues_with_clue": [
+            38
+        ],
+        "new_dialogue": "S1: I used to wear shoes in size 32.",
+        "correct_sentence": "S1: I used to wear shoes in size 30.",
+        "correctness": 0
+    },
+    {
+        "dialogues_with_clue": [
+            38
+        ],
+        "new_dialogue": "S1: The heel I bought this year actually fits my feets at the beginning.",
+        "correct_sentence": "S1: The heel I bought this year was actually a little tight at the beginning.",
+        "correctness": 0
+    },
+    {
+        "dialogues_with_clue": [
+            48
+        ],
+        "new_dialogue": "S1: The auction held last time is boring.",
+        "correct_sentence": "S1: The auction held last time is a blast!",
+        "correctness": 0
+    },
+    {
+        "dialogues_with_clue": [
+            48
+        ],
+        "new_dialogue": "S1: There is no special items in the last auction.",
+        "correct_sentence": "S1: The 1879 Large Dragon stamp was for sale in the last auction.",
+        "correctness": 0
+    },
+    {
+        "dialogues_with_clue": [
+            53
+        ],
+        "new_dialogue": "S1: I am always free at the weekend.",
+        "correct_sentence": "S1: I have a lot of work at the weekend.",
+        "correctness": 0
+    },
+    {
+        "dialogues_with_clue": [
+            54
+        ],
+        "new_dialogue": "S1: William's grandmother is sick, she has a cancer.",
+        "correct_sentence": "S1: Both of william's granmother passed away more than five years ago.",
+        "correctness": 0
+    },
+    {
+        "dialogues_with_clue": [
+            54
+        ],
+        "new_dialogue": "S1: William is mature and responsible.",
+        "correct_sentence": "S1: William once deceived Jen.",
+        "correctness": 0
+    },
+    {
+        "dialogues_with_clue": [
+            54
+        ],
+        "new_dialogue": "S1: Jen is wise, so she is not easily to be deceived.",
+        "correct_sentence": "S1: Jen has once been deceived by William.",
+        "correctness": 0
+    },
+    {
+        "dialogues_with_clue": [
+            55
+        ],
+        "new_dialogue": "S1: I never walk to the Thai restaurant.",
+        "correct_sentence": "S1: It's only about 20 minutes walking there.",
+        "correctness": 0
+    },
+    {
+        "dialogues_with_clue": [
+            55
+        ],
+        "new_dialogue": "S1: If you want to go to the Thai restaurant, I'll recommend you to take a taxi.",
+        "correct_sentence": "S1: If you want to go to the Thai restaurant, I'll recommend you to walk there.",
+        "correctness": 0
+    },
+    {
+        "dialogues_with_clue": [
+            55
+        ],
+        "new_dialogue": "S1: It's about 30 minutes to walk to the Thai restaurant.",
+        "correct_sentence": "S1: It's about 20 minutes to walk to the Thai restaurant.",
+        "correctness": 0
+    },
+    {
+        "dialogues_with_clue": [
+            58
+        ],
+        "new_dialogue": "S1: You need to go there by yourself, I never picked someone up.",
+        "correct_sentence": "S1: I'll pick you up.",
+        "correctness": 0
+    },
+    {
+        "dialogues_with_clue": [
+            59
+        ],
+        "new_dialogue": "S1: In china, people have a four-day holiday for Mid-Autumn Festival.",
+        "correct_sentence": "S1: In china, people have a three-day holiday for Mid-Autumn Festival.",
+        "correctness": 0
+    },
+    {
+        "dialogues_with_clue": [
+            59
+        ],
+        "new_dialogue": "S1: In China's mythology, there is a beautiful goddess called Chang' A living on the moon.",
+        "correct_sentence": "S1: In China's mythology, there is a beautiful goddess called Chang' E living on the moon",
+        "correctness": 0
+    },
+    {
+        "dialogues_with_clue": [
+            59
+        ],
+        "new_dialogue": "S1: In China, people consider 'round' as an inauspicious symbol.",
+        "correct_sentence": "S1: In China, 'round' is an auspicious word.",
+        "correctness": 0
+    },
+    {
+        "dialogues_with_clue": [
+            59
+        ],
+        "new_dialogue": "S1: The Mid-Autumn Festival takes place on the 16th day of the eighth lunar month.",
+        "correct_sentence": "S1: The Mid-Autumn Festival takes place on the 15th day of the eighth lunar month.",
+        "correctness": 0
+    },
+    {
+        "dialogues_with_clue": [
+            60
+        ],
+        "new_dialogue": "S1: Jessie didn't hold her birthday party this year.",
+        "correct_sentence": "S1: Jessie did hold her birthday party this year.",
+        "correctness": 0
+    },
+    {
+        "dialogues_with_clue": [
+            60
+        ],
+        "new_dialogue": "S1: Jessie's party was boring this year.",
+        "correct_sentence": "S1: We enjoyed a lot in Jessie's party.",
+        "correctness": 0
+    },
+    {
+        "dialogues_with_clue": [
+            60
+        ],
+        "new_dialogue": "S1: No one wants to go to Jessie's party.",
+        "correct_sentence": "S1: Many people want to go to Jessis's party.",
+        "correctness": 0
+    },
+    {
+        "dialogues_with_clue": [
+            87
+        ],
+        "new_dialogue": "S1: My first lover is Mary.",
+        "correct_sentence": "S1: My first lover is Linda.",
+        "correctness": 0
+    },
+    {
+        "dialogues_with_clue": [
+            87
+        ],
+        "new_dialogue": "S1: I never fall in love with others.",
+        "correct_sentence": "S1: I fell in love with Linda before.",
+        "correctness": 0
+    },
+    {
+        "dialogues_with_clue": [
+            89, 475
+        ],
+        "new_dialogue": "S1: I don't like to read.",
+        "correct_sentence": "S1: I read a couple of books this winter holiday.",
+        "correctness": 0
+    },
+    {
+        "dialogues_with_clue": [
+            89
+        ],
+        "new_dialogue": "S1: I had a get-together with some schoolmates at the elementary school.",
+        "correct_sentence": "S1: I had a get-together with some schoolmates at the high school.",
+        "correctness": 0
+    },
+    {
+        "dialogues_with_clue": [
+            215
+        ],
+        "new_dialogue": "S1: Have you watched the movie 'Click'?",
+        "correct_sentence": "S1: Have you watched the movie 'Click'?",
+        "correctness": 1
+    },
+    {
+        "dialogues_with_clue": [
+            239
+        ],
+        "new_dialogue": "S1: I've came up an idea to go to Italy next summer vacation.",
+        "correct_sentence": "S1: I've came up an idea to go to Italy next summer vacation.",
+        "correctness": 1
+    },
+    {
+        "dialogues_with_clue": [
+            244
+        ],
+        "new_dialogue": "S1: Mel is not available.",
+        "correct_sentence": "S1: Mel is not available.",
+        "correctness": 1
+    },
+    {
+        "dialogues_with_clue": [
+            249
+        ],
+        "new_dialogue": "S1: I have heard there are many famous national park in the US.",
+        "correct_sentence": "S1: I have heard there are many famous national park in the US.",
+        "correctness": 1
+    },
+    {
+        "dialogues_with_clue": [
+            270
+        ],
+        "new_dialogue": "S1: I know how to play poker and I can teach you.",
+        "correct_sentence": "S1: I know how to play poker and I can teach you.",
+        "correctness": 1
+    },
+    {
+        "dialogues_with_clue": [
+            270
+        ],
+        "new_dialogue": "S1: My dad played poker with me.",
+        "correct_sentence": "S1: My dad played poker with me.",
+        "correctness": 1
+    },
+    {
+        "dialogues_with_clue": [
+            272
+        ],
+        "new_dialogue": "S1: I can try shopping at a flea market.",
+        "correct_sentence": "S1: I can try shopping at a flea market.",
+        "correctness": 1
+    },
+    {
+        "dialogues_with_clue": [
+            272
+        ],
+        "new_dialogue": "S1: I've heard of the flea market.",
+        "correct_sentence": "S1: I've heard of the flea market.",
+        "correctness": 1
+    },
+    {
+        "dialogues_with_clue": [
+            272
+        ],
+        "new_dialogue": "S1: I've heard of the flea market.",
+        "correct_sentence": "S1: I've heard of the flea market.",
+        "correctness": 1
+    },
+    {
+        "dialogues_with_clue": [
+            272
+        ],
+        "new_dialogue": "S1: You can find a flea market by checking the local paper.",
+        "correct_sentence": "S1: You can find a flea market by checking the local paper.",
+        "correctness": 1
+    },
+    {
+        "dialogues_with_clue": [
+            272
+        ],
+        "new_dialogue": "S1: You can find a flea market by searching it online.",
+        "correct_sentence": "S1: You can find a flea market by searching it online.",
+        "correctness": 1
+    },
+    {
+        "dialogues_with_clue": [
+            312
+        ],
+        "new_dialogue": "S1: I bought some gifts for my father this Father's Day.",
+        "correct_sentence": "S1: I bought some gifts for my father this Father's Day.",
+        "correctness": 1
+    },
+    {
+        "dialogues_with_clue": [
+            3
+        ],
+        "new_dialogue": "S1: Mary learns to speak Latin by osmosis within three months.",
+        "correct_sentence": "S1: Mary learns to speak Latin by osmosis within three months.",
+        "correctness": 1
+    },
+    {
+        "dialogues_with_clue": [
+            7
+        ],
+        "new_dialogue": "S1: To hire a motorbike, you need $300 for 3 days, $600 for 7 days.",
+        "correct_sentence": "S1: To hire a motorbike, you need $300 for 3 days, $600 for 7 days.",
+        "correctness": 1
+    },
+    {
+        "dialogues_with_clue": [
+            7
+        ],
+        "new_dialogue": "S1: To hire a motorbike, you need $300 for 3 days, $600 for 7 days.",
+        "correct_sentence": "S1: To hire a motorbike, you need $300 for 3 days, $600 for 7 days.",
+        "correctness": 1
+    },
+    {
+        "dialogues_with_clue": [
+            7
+        ],
+        "new_dialogue": "S1: To hire a motorbike, you need $300 for 3 days, $600 for 7 days.",
+        "correct_sentence": "S1: To hire a motorbike, you need $300 for 3 days, $600 for 7 days.",
+        "correctness": 1
+    },
+    {
+        "dialogues_with_clue": [
+            11
+        ],
+        "new_dialogue": "S1: The piano took three people to move it.",
+        "correct_sentence": "S1: The piano took three people to move it.",
+        "correctness": 1
+    },
+    {
+        "dialogues_with_clue": [
+            11
+        ],
+        "new_dialogue": "S1: It was hard to get the piano here.",
+        "correct_sentence": "S1: It was hard to get the piano here.",
+        "correctness": 1
+    },
+    {
+        "dialogues_with_clue": [
+            17
+        ],
+        "new_dialogue": "S1: Jim borrowed money from Nick.",
+        "correct_sentence": "S1: Jim borrowed money from Nick.",
+        "correctness": 1
+    },
+    {
+        "dialogues_with_clue": [
+            17
+        ],
+        "new_dialogue": "S1: You have to worry about how to repay Nick. He is a loan shark.",
+        "correct_sentence": "S1: You have to worry about how to repay Nick. He is a loan shark.",
+        "correctness": 1
+    },
+    {
+        "dialogues_with_clue": [
+            17
+        ],
+        "new_dialogue": "S1: Jim was so desperate that he borrowed money from Nick, a loan shark.",
+        "correct_sentence": "S1: Jim was so desperate that he borrowed money from Nick, a loan shark.",
+        "correctness": 1
+    },
+    {
+        "dialogues_with_clue": [
+            20
+        ],
+        "new_dialogue": "S1: I think watching TV series is sheer waste of time to watch it.",
+        "correct_sentence": "S1: I think watching TV series is sheer waste of time to watch it.",
+        "correctness": 1
+    },
+    {
+        "dialogues_with_clue": [
+            20
+        ],
+        "new_dialogue": "S1: There are still a lot of people watch TV series.",
+        "correct_sentence": "S1: There are still a lot of people watch TV series.",
+        "correctness": 1
+    },
+    {
+        "dialogues_with_clue": [
+            36
+        ],
+        "new_dialogue": "S1: I don't like feature films.",
+        "correct_sentence": "S1: I don't like feature films.",
+        "correctness": 1
+    },
+    {
+        "dialogues_with_clue": [
+            36
+        ],
+        "new_dialogue": "S1: I like to see some documentary films.",
+        "correct_sentence": "S1: I like to see some documentary films.",
+        "correctness": 1
+    },
+    {
+        "dialogues_with_clue": [
+            36
+        ],
+        "new_dialogue": "S1: I don't like feature films. I think sometimes it loses contact with reality.",
+        "correct_sentence": "S1: I don't like feature films. I think sometimes it loses contact with reality.",
+        "correctness": 1
+    },
+    {
+        "dialogues_with_clue": [
+            37
+        ],
+        "new_dialogue": "S1: I've borrowed pen from Ann.",
+        "correct_sentence": "S1: I've borrowed pen from Ann.",
+        "correctness": 1
+    },
+    {
+        "dialogues_with_clue": [
+            38
+        ],
+        "new_dialogue": "S1: I used to wear shoes in size 30.",
+        "correct_sentence": "S1: I used to wear shoes in size 30.",
+        "correctness": 1
+    },
+    {
+        "dialogues_with_clue": [
+            38
+        ],
+        "new_dialogue": "S1: The heel I bought this year was actually a little tight at the beginning.",
+        "correct_sentence": "S1: The heel I bought this year was actually a little tight at the beginning.",
+        "correctness": 1
+    },
+    {
+        "dialogues_with_clue": [
+            48
+        ],
+        "new_dialogue": "S1: The auction held last time is a blast!",
+        "correct_sentence": "S1: The auction held last time is a blast!",
+        "correctness": 1
+    },
+    {
+        "dialogues_with_clue": [
+            48
+        ],
+        "new_dialogue": "S1: The 1879 Large Dragon stamp was for sale in the last auction.",
+        "correct_sentence": "S1: The 1879 Large Dragon stamp was for sale in the last auction.",
+        "correctness": 1
+    },
+    {
+        "dialogues_with_clue": [
+            53
+        ],
+        "new_dialogue": "S1: I have a lot of work at the weekend.",
+        "correct_sentence": "S1: I have a lot of work at the weekend.",
+        "correctness": 1
+    },
+    {
+        "dialogues_with_clue": [
+            54
+        ],
+        "new_dialogue": "S1: Both of william's granmother passed away more than five years ago.",
+        "correct_sentence": "S1: Both of william's granmother passed away more than five years ago.",
+        "correctness": 1
+    },
+    {
+        "dialogues_with_clue": [
+            54
+        ],
+        "new_dialogue": "S1: William once deceived Jen.",
+        "correct_sentence": "S1: William once deceived Jen.",
+        "correctness": 1
+    },
+    {
+        "dialogues_with_clue": [
+            54
+        ],
+        "new_dialogue": "S1: Jen has once been deceived by William.",
+        "correct_sentence": "S1: Jen has once been deceived by William.",
+        "correctness": 1
+    },
+    {
+        "dialogues_with_clue": [
+            55
+        ],
+        "new_dialogue": "S1: It's only about 20 minutes walking there.",
+        "correct_sentence": "S1: It's only about 20 minutes walking there.",
+        "correctness": 1
+    },
+    {
+        "dialogues_with_clue": [
+            55
+        ],
+        "new_dialogue": "S1: If you want to go to the Thai restaurant, I'll recommend you to walk there.",
+        "correct_sentence": "S1: If you want to go to the Thai restaurant, I'll recommend you to walk there.",
+        "correctness": 1
+    },
+    {
+        "dialogues_with_clue": [
+            55
+        ],
+        "new_dialogue": "S1: It's about 20 minutes to walk to the Thai restaurant.",
+        "correct_sentence": "S1: It's about 20 minutes to walk to the Thai restaurant.",
+        "correctness": 1
+    },
+    {
+        "dialogues_with_clue": [
+            58
+        ],
+        "new_dialogue": "S1: I'll pick you up.",
+        "correct_sentence": "S1: I'll pick you up.",
+        "correctness": 1
+    },
+    {
+        "dialogues_with_clue": [
+            59
+        ],
+        "new_dialogue": "S1: In china, people have a three-day holiday for Mid-Autumn Festival.",
+        "correct_sentence": "S1: In china, people have a three-day holiday for Mid-Autumn Festival.",
+        "correctness": 1
+    },
+    {
+        "dialogues_with_clue": [
+            59
+        ],
+        "new_dialogue": "S1: In China's mythology, there is a beautiful goddess called Chang' E living on the moon",
+        "correct_sentence": "S1: In China's mythology, there is a beautiful goddess called Chang' E living on the moon",
+        "correctness": 1
+    },
+    {
+        "dialogues_with_clue": [
+            59
+        ],
+        "new_dialogue": "S1: In China, 'round' is an auspicious word.",
+        "correct_sentence": "S1: In China, 'round' is an auspicious word.",
+        "correctness": 1
+    },
+    {
+        "dialogues_with_clue": [
+            59
+        ],
+        "new_dialogue": "S1: The Mid-Autumn Festival takes place on the 15th day of the eighth lunar month.",
+        "correct_sentence": "S1: The Mid-Autumn Festival takes place on the 15th day of the eighth lunar month.",
+        "correctness": 1
+    },
+    {
+        "dialogues_with_clue": [
+            60
+        ],
+        "new_dialogue": "S1: Jessie did hold her birthday party this year.",
+        "correct_sentence": "S1: Jessie did hold her birthday party this year.",
+        "correctness": 1
+    },
+    {
+        "dialogues_with_clue": [
+            60
+        ],
+        "new_dialogue": "S1: We enjoyed a lot in Jessie's party.",
+        "correct_sentence": "S1: We enjoyed a lot in Jessie's party.",
+        "correctness": 1
+    },
+    {
+        "dialogues_with_clue": [
+            60
+        ],
+        "new_dialogue": "S1: Many people want to go to Jessis's party.",
+        "correct_sentence": "S1: Many people want to go to Jessis's party.",
+        "correctness": 1
+    },
+    {
+        "dialogues_with_clue": [
+            87
+        ],
+        "new_dialogue": "S1: My first lover is Linda.",
+        "correct_sentence": "S1: My first lover is Linda.",
+        "correctness": 1
+    },
+    {
+        "dialogues_with_clue": [
+            87
+        ],
+        "new_dialogue": "S1: I fell in love with Linda before.",
+        "correct_sentence": "S1: I fell in love with Linda before.",
+        "correctness": 1
+    },
+    {
+        "dialogues_with_clue": [
+            89
+        ],
+        "new_dialogue": "S1: I read a couple of books this winter holiday.",
+        "correct_sentence": "S1: I read a couple of books this winter holiday.",
+        "correctness": 1
+    },
+    {
+        "dialogues_with_clue": [
+            89
+        ],
+        "new_dialogue": "S1: I had a get-together with some schoolmates at the high school.",
+        "correct_sentence": "S1: I had a get-together with some schoolmates at the high school.",
+        "correctness": 1
+    }
+]

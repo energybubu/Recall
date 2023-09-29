@@ -1,0 +1,182 @@
+[
+    {
+        "dialogue_ids":[],
+        "dialogues_with_clue": [1003, 1004, 1006, 1007],
+        "new_dialogue":"S3: How did the practicing help you in the badminton competition on Sunday?\nS1:",
+        "replier":"S1",
+        "profession":"student",
+        "reply":"The serves practiced before the competition helps me beat the opponents on the semi-final. Finally, I won the championship.",
+        "crucial_reply":"serves semi-final championship"
+    },
+    {
+        "dialogue_ids":[],
+        "dialogues_with_clue": [1003, 1004, 1005, 1007],
+        "new_dialogue":"S3: Tell me about the details in the badminton competition on Saturday. Did you practice for that? Did you have any awards?\nS1:",
+        "replier":"S1",
+        "profession":"student",
+        "reply":"There were approximately 20 participants in total. I practiced for that with friends. I won the championship.",
+        "crucial_reply":"20 participants I practice won championship"
+    },
+    {
+        "dialogue_ids":[],
+        "dialogues_with_clue": [1003, 1007],
+        "new_dialogue":"S3: Have you attended any badminton competition before?\nS1:",
+        "replier":"S1",
+        "profession":"student",
+        "reply":"Yes. And I won the championship.",
+        "crucial_reply":"Yes won championship"
+    },
+    {
+        "dialogue_ids":[],
+        "dialogues_with_clue": [1003, 1004, 1005],
+        "new_dialogue":"S3: Did you practice for the badminton competition held last time on Saturday? Did you think you prepare for the competition well?\nS1:",
+        "replier":"S1",
+        "profession":"student",
+        "reply":"I practice for it but I don't think it's sufficient. So I got nervous before the competition.",
+        "crucial_reply":"not sufficient nervous before competition"
+    },
+    {
+        "dialogue_ids":[],
+        "dialogues_with_clue": [1008, 1009],
+        "new_dialogue":"S3: What's your major in university? Why did you choose this major?\nS1:",
+        "replier":"S1",
+        "profession":"student",
+        "reply":"I major in computer engineering in university. I chose this major because I found it appears to be quite captivating.",
+        "crucial_reply":"computer engineering captivating"
+    },
+    {
+        "dialogue_ids":[],
+        "dialogues_with_clue": [1010, 1011, 1012],
+        "new_dialogue":"S3: What have you done after entering the university?\nS1:",
+        "replier":"S1",
+        "profession":"student",
+        "reply":"I've taken classes in this major, gained a lot from diligently studying computer engineering, completed a signigicant project in computer engineering, and got the internship at a well-respected technology company.",
+        "crucial_reply":"taken classes diligently studying complete project internship"
+    },
+    {
+        "dialogue_ids":[],
+        "dialogues_with_clue": [1009, 1010, 1011, 1012],
+        "new_dialogue":"S3: What's your major? How did you got your internship?\nS1:",
+        "replier":"S1",
+        "profession":"student",
+        "reply":"I major in computer engineering. I studied diligently before the interview and displayed a significant project to show my ability during the interview.",
+        "crucial_reply":"computer engineering studied diligently displayed project interview"
+    },
+    {
+        "dialogue_ids":[],
+        "dialogues_with_clue": [1009, 1010, 1011, 1012],
+        "new_dialogue":"S3: How did you determined to major in computer engineering? Do you feel satisfied with the decision?\nS1:",
+        "replier":"S1",
+        "profession":"student",
+        "reply":"I have been contemplating that for a while. I have also been exploring the topic, and I found it captivating. I enjoy studying computer engineering because it's challenging but enjoyable. And I also finished a significant project and got the internship. So, I feel satisfied with this decision.",
+        "crucial_reply":"contemplating exploring captivating enjoy challenging enjoyable finish project internship"
+    },
+    {
+        "dialogue_ids":[],
+        "dialogues_with_clue": [1014, 1015, 1016, 1017],
+        "new_dialogue":"S3: Wow! You are really good at playing the guitar! How do you reach this level?\nS1:",
+        "replier":"S1",
+        "profession":"student",
+        "reply":"At first, I took guitar lessons, and I practiced every day. And then, after I learned my first song on the guitar, I went to play it at an open mic night.",
+        "crucial_reply":"take lessons practiece every day learn first song play at open mic"
+    },
+    {
+        "dialogue_ids":[],
+        "dialogues_with_clue": [1013, 1015, 1016, 1017],
+        "new_dialogue":"S3: What kind of instruments do you play? What's your level on playing this instrument?\nS1:",
+        "replier":"S1",
+        "profession":"student",
+        "reply":"I can play the guitar. I recently acquired proficiency in playing 'wonderwall' and have tried to play it at an open mic night.",
+        "crucial_reply":"guitar, proficiency wonderwall open mic"
+    },
+    {
+        "dialogue_ids":[],
+        "dialogues_with_clue": [1014, 1015, 1016, 1017],
+        "new_dialogue":"S3: How did you overcome the challenges on playing the guitar?\nS1:",
+        "replier":"S1",
+        "profession":"student",
+        "reply":"I took a guitar lesson, and tried to practice for that every day. And after I mastered in playing 'Wonderwall', I went to an open mic night and played in front of audiences.",
+        "crucial_reply":"take lesson practice every day one song Wonderwall open mic"
+    },
+    {
+        "dialogue_ids":[],
+        "dialogues_with_clue": [1014, 1015, 1017],
+        "new_dialogue":"S3: How did you learn to play the guitar?\nS1:",
+        "replier":"S1",
+        "profession":"student",
+        "reply":"I took guitar lessons and practiced every day. And then I tried to perform in front of audiences.",
+        "crucial_reply":"take lesson practice every day audiences"
+    },
+    {
+        "dialogue_ids":[],
+        "dialogues_with_clue": [1018, 1019, 1020, 1021],
+        "new_dialogue":"S3: What's the process from no driving experience to having a driver's license?\nS1:",
+        "replier":"S1",
+        "profession":"student",
+        "reply":"I first enrolled in a driving school, took some lessons and then practiced for a few days. After that I join the driving test, and after passing that, I got the driver's license.",
+        "crucial_reply":"driving school lessons practice driving test"
+    },
+    {
+        "dialogue_ids":[],
+        "dialogues_with_clue": [1018, 1019, 1020, 1021],
+        "new_dialogue":"S3: How did you pass the driving test? I thought you don't have any driving experience\nS1:",
+        "replier":"S1",
+        "profession":"student",
+        "reply":"I first enrolled in a driving school, took some lessons and then practiced for a few days. After that I passed the test.",
+        "crucial_reply":"driving school lessons practice"
+    },
+    {
+        "dialogue_ids":[],
+        "dialogues_with_clue": [1019, 1020, 1021, 1022],
+        "new_dialogue":"S3: What's the process for you to learn how to drive?\nS1:",
+        "replier":"S1",
+        "profession":"student",
+        "reply":"I first took driving lesson and practicing parallel parking skills for hours. After passing the driving test, I drove on highways and long distances to get more experienced.",
+        "crucial_reply":"driving lesson practice parallel parking skills driving test highway long distance"
+    },
+    {
+        "dialogue_ids":[],
+        "dialogues_with_clue": [1003, 1023],
+        "new_dialogue":"S3: What sports do you play?\nS1:",
+        "replier":"S1",
+        "profession":"student",
+        "reply":"I can play ping-pong and badminton.",
+        "crucial_reply":"ping pong badminton"
+    },
+    {
+        "dialogue_ids":[],
+        "dialogues_with_clue": [1007, 1027],
+        "new_dialogue":"S3: Have you won the championship in any tournament before?\nS1:",
+        "replier":"S1",
+        "profession":"student",
+        "reply":"Yes, I have won the championship in both badminton and ping-pong.",
+        "crucial_reply":"badminton ping-pong"
+    },
+    {
+        "dialogue_ids":[],
+        "dialogues_with_clue": [1025, 1026, 1027],
+        "new_dialogue":"S3: How did you prepare for the ping-pong tournament and manage to win during the tournament?\nS1:",
+        "replier":"S1",
+        "profession":"student",
+        "reply":"I've been honing my serve skills in ping-pong before the tournament. And during the semi-final and the final, I tried to adapt to different playing styles, stayed focus, and played my best.",
+        "crucial_reply":"serve skill semi final adapt style focus"
+    },
+    {
+        "dialogue_ids":[],
+        "dialogues_with_clue": [1024, 1025],
+        "new_dialogue":"S3: What have you learned in ping-pong?\nS1:",
+        "replier":"S1",
+        "profession":"student",
+        "reply":"I've been learned the basic techniques, footwork, and the serve skills.",
+        "crucial_reply":"basic techniques, footwork, serve skills"
+    },
+    {
+        "dialogue_ids":[],
+        "dialogues_with_clue": [1003, 1006, 1007, 1026],
+        "new_dialogue":"S3: What kind of tournament have you participated in?\nS1:",
+        "replier":"S1",
+        "profession":"student",
+        "reply":"I have participated in the tournament of ping-pong and badminton",
+        "crucial_reply":"ping pong badminton"
+    }
+]
