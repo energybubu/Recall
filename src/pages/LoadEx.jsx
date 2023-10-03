@@ -8,7 +8,6 @@ const LoadEx = ({messages, setMessages, newMessage, setNewMessage, example, setE
     useEffect(() => {
 			const fetchDataFromAPI = async () => {
 				try {
-					console.log(`${URL}/api/getExample`)
 					const response = await fetchData(`${URL}/api/getExample`);
 
 					setExample({stories:response.stories, summaries:response.summaries, recallExamples:response.recallExamples, conflictExamples:response.conflictExamples})
