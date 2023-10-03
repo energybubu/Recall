@@ -5,7 +5,7 @@ import './css/pageWithExample.css'
 import { HashRouter as Router, Route, Routes, Link, Navigate } from 'react-router-dom';
 import PageWithExample from './pages/pageWithExample'
 import Firstpage from './pages/firstPage'
-
+import Promptpage from './pages/promptPage'
 function App() {
 
   const topics = ['Badminton Competition', 'Studying Computer Engineering', "Playing the Guitar", 'Driving Experiences', 'Ping-Pong Competition']
@@ -15,6 +15,7 @@ function App() {
     <Router>
       <Routes>
         <Route path='/' element={<Firstpage/> }/>
+        <Route path='/prompt' element={<Promptpage/> }/>
         {
           topics.map((id, index)=>(
             <Route path={id.replace(/ /g, "")} element={<PageWithExample storyId={index} />}/>

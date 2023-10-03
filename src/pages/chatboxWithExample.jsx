@@ -175,7 +175,7 @@ const Chatbox = ( {messages, setMessages, newMessage, setNewMessage, example, st
       return;
     }
     setWarningMsg('S2 is typing ...')
-    const res = await handlePostData('/api/chat', {messages: updatedMessages});
+    const res = await handlePostData('/api/chat', {messages: updatedMessages, prev_messages: example.stories[storyId]});
     setWarningMsg('')
     var updatedMessages = [...updatedMessages, { text: res.res, sender: 'bot' }];
     setMessages(updatedMessages);
