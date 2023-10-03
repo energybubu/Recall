@@ -5,7 +5,8 @@ import { Link } from 'react-router-dom';
 
 const Firstpage = () => (
     <div>
-      <Link to='/prompt'>See Prompts</Link>
+      <Link to='/prompt'>Prompts</Link><br/>
+      <Link to='/dataset'>Dataset</Link>
       <div style={{display:"flex", alignItems:"center", justifyContent:'center', flexDirection:"column"}}>
         <h1>Choose a story to start:</h1>
         <div>
