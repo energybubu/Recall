@@ -5,7 +5,7 @@ const Firstpage = () => {
     const Indent = () => <>&nbsp;&nbsp;&nbsp;&nbsp;</>;
 
     return (
-        <div>
+        <div style={{display:'flex', flexDirection:'column' ,height:'90vh'}}>
             <Link to='/'>Go Back to Home Page</Link>
             <h2>Event Recaller</h2>
             
@@ -75,6 +75,7 @@ const Firstpage = () => {
             <p><Indent/>New Dialogue</p>
             <p><Indent/>[[ Instruction ]]</p>
             <p><Indent/>Rewrite the last utterance in New Dialogue only based on Previous Dialogues to resolve Conflicts and provide details as more as you can.</p>
+            <br/><br/><br/><br/>
         </div>
     );
 }
