@@ -5,7 +5,7 @@ const Firstpage = () => {
     const Indent = () => <>&nbsp;&nbsp;&nbsp;&nbsp;</>;
 
     return (
-        <div style={{display:'flex', flexDirection:'column' ,height:'90vh'}}>
+        <div style={{height:'90vh'}}>
             <Link to='/'>Go Back to Home Page</Link>
             <h1>Event Recaller</h1>
             

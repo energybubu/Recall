@@ -79,7 +79,7 @@ const DatasetPage = () => {
     const PrettyPrintJson = ({ data }) => (
         <div>
           {data.map((item, index) => (
-            <pre key={index} style={{overflowX:'auto', width:'90vh'}}>
+            <pre key={index} style={{overflowX:'auto'}}>
               {JSON.stringify(item, null, 2)}
             </pre>
           ))}
@@ -87,8 +87,9 @@ const DatasetPage = () => {
       );
       
     return (
-        <div style={{height:'90vh', width:'90vh'}}>
-            <h1>Dialogues Retrieve from LED Dataset</h1>
+        <div style={{width:'150vh'}}>
+            {/* <div style={{height:'10vh'}}></div> */}
+            <h1>Dialogues Retrieved from LED Dataset</h1>
             <ul>
             <li>id = 1 ~ 1002</li>
             </ul>
@@ -119,6 +120,7 @@ const DatasetPage = () => {
             <hr/>
             <h2>Examples</h2>
             <PrettyPrintJson data={conflictExamples}/>
+            <div style={{height:'10vh'}}></div>
         </div>
     );
 }
