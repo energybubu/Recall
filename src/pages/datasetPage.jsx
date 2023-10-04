@@ -88,7 +88,8 @@ const DatasetPage = () => {
       
     return (
         <div style={{width:'150vh'}}>
-            {/* <div style={{height:'10vh'}}></div> */}
+        <div style={{height:'5vh'}}></div>
+            <Link to='/'>Go Back to Home Page</Link>
             <h1>Dialogues Retrieved from LED Dataset</h1>
             <ul>
             <li>id = 1 ~ 1002</li>
