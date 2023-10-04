@@ -105,16 +105,16 @@ const DatasetPage = () => {
             <PrettyPrintJson data={chatGPTDialogues}/>
             <h1>Event Recaller</h1>
             <ul>
-            <li>The first instance shows that there is only one single related dialogues, there are total 51 instances for this format</li>
-            <li>The second instance shows that there are more than two related dialogues, there are total 20 instances for this format</li>
+            <li>The first instance shows that there is only one single related dialogues, there are total 51 instances in this format</li>
+            <li>The second instance shows that there are more than two related dialogues, there are total 20 instances in this format</li>
             </ul>
             <hr/>
             <h2>Examples</h2>
             <PrettyPrintJson data={recallExamples}/>
             <h1>Conflict Corrector</h1>
             <ul>
-                <li>The first instance shows that there is only one single related dialogues, there are total 50 instances for this format</li>
-                <li>The second instance shows that there are more than two related dialogues, there are total 20 instances for this format</li>
+                <li>The first instance shows that there is only one single related dialogues, there are total 50 instances in this format</li>
+                <li>The second instance shows that there are more than two related dialogues, there are total 20 instances in this format</li>
                 <li>When we conducted the experiment of Conflict Detection, we needed half instances with conflicts and the other half without conflicts. Therefore, we built the other half which is without conflicts by exchange the "new_dialogue" and the "correct_sentence", and set the "correctness" to 1.</li>
             </ul>
             <hr/>

@@ -28,13 +28,13 @@ const Firstpage = () => {
             <p><Indent/>New Dialogue</p>
             <br/>
             <p><Indent/>[[ Instruction ]]</p>
-            <p><Indent/>Finish what S1 should say, and provide details only based on previous dialogues in short. No explanation needed.</p>
+            <p><Indent/>Finish what S1 should say, and provide details only based on previous dialogues in short.</p>
             <br/><br/>
             
             <h1>Conflict Corrector --- Detection</h1>
             
             <h3>System Message:</h3>
-            <p><Indent/>Detect conflicts between Previous Dialogues and New Dialogue, and then output 'Yes' or 'No'. S1 is always the same person. Ignore the conflicts caused by name.</p>
+            <p><Indent/>Detect conflicts between Previous Dialogues and New Dialogue, and then output 'Yes' or 'No'.</p>
             <br/>
             <h3>User Message</h3>
             <p><Indent/>[[ Previous Dialogues ]]</p>
